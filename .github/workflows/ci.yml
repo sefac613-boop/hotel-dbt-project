@@ -1,0 +1,33 @@
+ 
+name: Hotel Bookings CI/CD
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install dbt-core great_expectations pytest
+
+      - name: Run DBT tests
+        run: |
+          dbt test
+        env:
+          DBT_PROFILES_DIR: .
+
+      - name: Run Great Expectations
+        run: |
+          python tests/05_quality_tests_ge.py
