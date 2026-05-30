@@ -1,0 +1,10 @@
+happy_bookings:
+  target: dev
+  outputs:
+    dev:
+      type: fabric
+      driver: 'ODBC Driver 18 for SQL Server'
+      server: 'pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com'
+      database: 'bronze_booking'
+      schema: dbo
+      authentication: ActiveDirectoryInteractive # Veya kullandığınız auth yöntemi
