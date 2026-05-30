@@ -1,0 +1,88 @@
+{
+  "sources": [
+    {
+      "id": "7e768e88-cd08-4084-966b-982e2202e57f",
+      "name": "hotel-simulator",
+      "type": "CustomEndpoint",
+      "properties": {}
+    }
+  ],
+  "destinations": [
+    {
+      "id": "63a5e5e2-eaef-4a95-bfb6-15ff46a93b7f",
+      "name": "hotel_kql_destination",
+      "type": "Eventhouse",
+      "properties": {
+        "dataIngestionMode": "ProcessedIngestion",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "bde1b69b-fe89-acbf-4a66-4d66d4a0cd30",
+        "databaseName": "hotel_eventhouse",
+        "tableName": "hotel_events",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "hotel_stream-stream"
+        }
+      ],
+      "inputSchemas": [
+        {
+          "name": "hotel_stream-stream",
+          "schema": {
+            "columns": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "68c4cd5c-a179-489b-a336-eb9779eb2e65",
+      "name": "bronze_Lakehouse",
+      "type": "Lakehouse",
+      "properties": {
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "itemId": "b6f945e0-1075-ac5f-4c7a-62f0b9dbacf7",
+        "schema": "dbo",
+        "deltaTable": "bronze_booking_table",
+        "inputSerialization": {
+          "type": "Json",
+          "properties": {
+            "encoding": "UTF8"
+          }
+        }
+      },
+      "inputNodes": [
+        {
+          "name": "hotel_stream-stream"
+        }
+      ],
+      "inputSchemas": [
+        {
+          "name": "hotel_stream-stream",
+          "schema": {
+            "columns": []
+          }
+        }
+      ]
+    }
+  ],
+  "streams": [
+    {
+      "id": "d0d58b82-be20-419a-b272-e35a7bd96455",
+      "name": "hotel_stream-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "hotel-simulator"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.1"
+}

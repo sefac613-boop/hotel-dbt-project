@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Eventstream",
+    "displayName": "hotel_stream"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e7bb8d2f-8854-9f7a-42d1-87a1c43e2dc7"
+  }
+}

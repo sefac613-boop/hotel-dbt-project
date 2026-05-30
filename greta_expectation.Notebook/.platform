@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "greta_expectation"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4ab3ef38-c680-9d5b-4348-a6874cdffc2e"
+  }
+}
