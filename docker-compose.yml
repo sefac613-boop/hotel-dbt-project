@@ -1,0 +1,12 @@
+version: '3'
+services:
+  producer:
+    build: .
+    env_file:
+      - .env
+    environment:
+      - INTERVAL_SEC=1.0
+      - BATCH_SIZE=10
+    volumes:
+      - ./output:/app/output  # hotel_raw_stream.jsonl buraya yazılır
+    restart: unless-stopped

@@ -1,0 +1,34 @@
+version: 2
+
+sources:
+  - name: fabric_onelake
+    database: bronze_booking
+    schema: dbo
+    tables:
+      - name: fact_booking
+        description: "Temizlenmiş operasyonel rezervasyon ve event verilerini içeren fact tablosu."
+        columns:
+          - name: booking_id
+            description: "Her rezervasyona ait benzersiz anahtar."
+            tests:
+              - unique
+              - not_null
+          - name: hotel_id
+            tests:
+              - not_null
+
+      - name: dim_city
+        description: "Otellerin konum ve yıldız bilgilerini tutan boyut tablosu."
+        columns:
+          - name: hotel_id
+            tests:
+              - unique
+              - not_null
+
+      - name: kpi_revenue
+        description: "Gelir ve iptal analizleri için kullanılan KPI tablosu."
+        columns:
+          - name: booking_id
+            tests:
+              - unique
+              - not_null

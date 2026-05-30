@@ -1,0 +1,1118 @@
+[0m17:58:47.535528 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 17:58:47.711059 | e8017e99-5065-47ca-847a-9db78e4035c1 ==============================
+[0m17:58:47.711059 [info ] [MainThread]: Running with dbt=1.11.11
+[0m17:58:47.714051 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'False', 'invocation_command': 'dbt test --no-partial-parse --project-dir . --profiles-dir C:\\Users\\user1\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m17:58:50.199001 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m17:58:51.626256 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m17:58:51.631243 [debug] [MainThread]: Partial parsing not enabled
+[0m17:59:00.520963 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading happy_bookings: .venv\Lib\site-packages\dbt\include\starter_project\dbt_project.yml - Runtime Error
+    Syntax error near line 32
+    ------------------------------
+    29 | # directory as views. These settings can be overridden in the individual model
+    30 | # files using the `{{{{ config(...) }}}}` macro.
+    31 | models:
+    32 |   {project_name}:
+    33 |     # Config indicated by + and applies to all files under models/example/
+    34 |     example:
+    35 |       +materialized: view
+    
+    Raw Error:
+    ------------------------------
+    while constructing a mapping
+    found unhashable key
+      in "<unicode string>", line 32, column 3
+[0m17:59:00.522959 [debug] [MainThread]: Command `dbt test` failed at 17:59:00.522959 after 13.20 seconds
+[0m17:59:00.524955 [debug] [MainThread]: Flushing usage events
+[0m18:01:49.797073 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 18:01:49.944642 | a6304c91-ce59-4372-8e3a-bf3a959ed5ea ==============================
+[0m18:01:49.944642 [info ] [MainThread]: Running with dbt=1.11.11
+[0m18:01:49.946651 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'False', 'invocation_command': 'dbt test --no-partial-parse --project-dir C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\ --profiles-dir C:\\Users\\user1\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m18:01:51.260858 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m18:01:52.081301 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m18:01:52.086284 [debug] [MainThread]: Partial parsing not enabled
+[0m18:01:58.683401 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading happy_bookings: .venv\Lib\site-packages\dbt\include\starter_project\dbt_project.yml - Runtime Error
+    Syntax error near line 32
+    ------------------------------
+    29 | # directory as views. These settings can be overridden in the individual model
+    30 | # files using the `{{{{ config(...) }}}}` macro.
+    31 | models:
+    32 |   {project_name}:
+    33 |     # Config indicated by + and applies to all files under models/example/
+    34 |     example:
+    35 |       +materialized: view
+    
+    Raw Error:
+    ------------------------------
+    while constructing a mapping
+    found unhashable key
+      in "<unicode string>", line 32, column 3
+[0m18:01:58.686422 [debug] [MainThread]: Command `dbt test` failed at 18:01:58.686422 after 9.02 seconds
+[0m18:01:58.687420 [debug] [MainThread]: Flushing usage events
+[0m18:04:29.933837 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 18:04:30.109571 | 5b3fdeb5-7b11-4f85-8251-1ab1afd78f86 ==============================
+[0m18:04:30.109571 [info ] [MainThread]: Running with dbt=1.11.11
+[0m18:04:30.111562 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'invocation_command': 'dbt test --no-partial-parse --project-dir C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings --profiles-dir C:\\Users\\user1\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m18:04:31.268134 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m18:04:32.142990 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m18:04:32.145969 [debug] [MainThread]: Partial parsing not enabled
+[0m18:04:37.193352 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading happy_bookings: .venv\Lib\site-packages\dbt\include\starter_project\dbt_project.yml - Runtime Error
+    Syntax error near line 32
+    ------------------------------
+    29 | # directory as views. These settings can be overridden in the individual model
+    30 | # files using the `{{{{ config(...) }}}}` macro.
+    31 | models:
+    32 |   {project_name}:
+    33 |     # Config indicated by + and applies to all files under models/example/
+    34 |     example:
+    35 |       +materialized: view
+    
+    Raw Error:
+    ------------------------------
+    while constructing a mapping
+    found unhashable key
+      in "<unicode string>", line 32, column 3
+[0m18:04:37.196339 [debug] [MainThread]: Command `dbt test` failed at 18:04:37.196339 after 7.39 seconds
+[0m18:04:37.197337 [debug] [MainThread]: Flushing usage events
+[0m10:50:57.632630 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 10:50:57.815316 | 29182df9-5a4b-46b0-87ba-47873dac4dec ==============================
+[0m10:50:57.815316 [info ] [MainThread]: Running with dbt=1.11.11
+[0m10:50:57.817305 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m10:51:05.498304 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m10:51:06.482685 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m10:51:06.486363 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:52:58.679757 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Error reading happy_bookings: .venv\Lib\site-packages\dbt\include\starter_project\dbt_project.yml - Runtime Error
+    Syntax error near line 32
+    ------------------------------
+    29 | # directory as views. These settings can be overridden in the individual model
+    30 | # files using the `{{{{ config(...) }}}}` macro.
+    31 | models:
+    32 |   {project_name}:
+    33 |     # Config indicated by + and applies to all files under models/example/
+    34 |     example:
+    35 |       +materialized: view
+    
+    Raw Error:
+    ------------------------------
+    while constructing a mapping
+    found unhashable key
+      in "<unicode string>", line 32, column 3
+[0m10:52:58.681801 [debug] [MainThread]: Command `dbt test` failed at 10:52:58.681801 after 121.32 seconds
+[0m10:52:58.682781 [debug] [MainThread]: Flushing usage events
+[0m10:55:01.502806 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 10:55:01.631582 | 1afd4c14-732a-439b-bf37-96ed49f35937 ==============================
+[0m10:55:01.631582 [info ] [MainThread]: Running with dbt=1.11.11
+[0m10:55:01.633558 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m10:55:02.732497 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m10:55:03.351648 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m10:55:03.353645 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m10:55:05.751752 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.happy_bookings
+[0m10:55:05.938662 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m10:55:05.978234 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m10:55:06.044751 [info ] [MainThread]: Found 7 data tests, 3 sources, 525 macros
+[0m10:55:06.050735 [info ] [MainThread]: 
+[0m10:55:06.052729 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m10:55:06.054737 [info ] [MainThread]: 
+[0m10:55:06.056751 [debug] [MainThread]: Acquiring new fabric connection 'master'
+[0m10:55:06.060107 [debug] [MainThread]: On master: COMMIT
+[0m10:55:06.124677 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8
+[0m10:55:06.128669 [info ] [Thread-1 (]: 1 of 7 START test source_not_null_fabric_onelake_dim_city_hotel_id ............. [RUN]
+[0m10:55:06.130663 [debug] [Thread-1 (]: Acquiring new fabric connection 'test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8'
+[0m10:55:06.131659 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8
+[0m10:55:06.167053 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8"
+[0m10:55:06.173035 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8
+[0m10:55:06.235868 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8"
+[0m10:55:06.240854 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8"
+[0m10:55:06.242853 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select hotel_id
+from [bronze_booking].[dbo].[dim_city]
+where hotel_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.243848 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:55:06.245841 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m10:55:06.264076 [debug] [Thread-1 (]: fabric adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select hotel_id
+from [bronze_booking].[dbo].[dim_city]
+where hotel_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.265074 [debug] [Thread-1 (]: fabric adapter: Rolling back transaction.
+[0m10:55:06.266072 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8: No close available on handle
+[0m10:55:06.281287 [debug] [Thread-1 (]: Database Error in test source_not_null_fabric_onelake_dim_city_hotel_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_dim_city_hotel_id.sql
+[0m10:55:06.282282 [error] [Thread-1 (]: 1 of 7 ERROR source_not_null_fabric_onelake_dim_city_hotel_id .................. [[31mERROR[0m in 0.15s]
+[0m10:55:06.284278 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8
+[0m10:55:06.285275 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b
+[0m10:55:06.286272 [debug] [Thread-4 (]: Marking all children of 'test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8' to be skipped because of status 'error'.  Reason: Database Error in test source_not_null_fabric_onelake_dim_city_hotel_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_dim_city_hotel_id.sql.
+[0m10:55:06.287270 [info ] [Thread-1 (]: 2 of 7 START test source_not_null_fabric_onelake_fact_booking_booking_id ....... [RUN]
+[0m10:55:06.289266 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8, now test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b)
+[0m10:55:06.290263 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b
+[0m10:55:06.302686 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b"
+[0m10:55:06.305679 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b
+[0m10:55:06.315650 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b"
+[0m10:55:06.317644 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b"
+[0m10:55:06.318643 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select booking_id
+from [bronze_booking].[dbo].[fact_booking]
+where booking_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.319642 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:55:06.320638 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m10:55:06.321635 [debug] [Thread-1 (]: fabric adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select booking_id
+from [bronze_booking].[dbo].[fact_booking]
+where booking_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.322633 [debug] [Thread-1 (]: fabric adapter: Rolling back transaction.
+[0m10:55:06.322633 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b: No close available on handle
+[0m10:55:06.333602 [debug] [Thread-1 (]: Database Error in test source_not_null_fabric_onelake_fact_booking_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_fact_booking_booking_id.sql
+[0m10:55:06.335603 [error] [Thread-1 (]: 2 of 7 ERROR source_not_null_fabric_onelake_fact_booking_booking_id ............ [[31mERROR[0m in 0.05s]
+[0m10:55:06.337593 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b
+[0m10:55:06.338590 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e
+[0m10:55:06.340585 [debug] [Thread-4 (]: Marking all children of 'test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b' to be skipped because of status 'error'.  Reason: Database Error in test source_not_null_fabric_onelake_fact_booking_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_fact_booking_booking_id.sql.
+[0m10:55:06.342581 [info ] [Thread-1 (]: 3 of 7 START test source_not_null_fabric_onelake_fact_booking_hotel_id ......... [RUN]
+[0m10:55:06.344576 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b, now test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e)
+[0m10:55:06.346570 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e
+[0m10:55:06.354546 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e"
+[0m10:55:06.358538 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e
+[0m10:55:06.367511 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e"
+[0m10:55:06.374501 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e"
+[0m10:55:06.379509 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select hotel_id
+from [bronze_booking].[dbo].[fact_booking]
+where hotel_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.381475 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:55:06.383471 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m10:55:06.385465 [debug] [Thread-1 (]: fabric adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select hotel_id
+from [bronze_booking].[dbo].[fact_booking]
+where hotel_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.386461 [debug] [Thread-1 (]: fabric adapter: Rolling back transaction.
+[0m10:55:06.386461 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e: No close available on handle
+[0m10:55:06.395436 [debug] [Thread-1 (]: Database Error in test source_not_null_fabric_onelake_fact_booking_hotel_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_fact_booking_hotel_id.sql
+[0m10:55:06.396434 [error] [Thread-1 (]: 3 of 7 ERROR source_not_null_fabric_onelake_fact_booking_hotel_id .............. [[31mERROR[0m in 0.05s]
+[0m10:55:06.398429 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e
+[0m10:55:06.399427 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8
+[0m10:55:06.400423 [debug] [Thread-4 (]: Marking all children of 'test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e' to be skipped because of status 'error'.  Reason: Database Error in test source_not_null_fabric_onelake_fact_booking_hotel_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_fact_booking_hotel_id.sql.
+[0m10:55:06.401420 [info ] [Thread-1 (]: 4 of 7 START test source_not_null_fabric_onelake_kpi_revenue_booking_id ........ [RUN]
+[0m10:55:06.402418 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e, now test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8)
+[0m10:55:06.404415 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8
+[0m10:55:06.417378 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8"
+[0m10:55:06.419372 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8
+[0m10:55:06.429387 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8"
+[0m10:55:06.433335 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8"
+[0m10:55:06.434336 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select booking_id
+from [bronze_booking].[dbo].[kpi_revenue]
+where booking_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.435333 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:55:06.436328 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m10:55:06.437325 [debug] [Thread-1 (]: fabric adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select booking_id
+from [bronze_booking].[dbo].[kpi_revenue]
+where booking_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.438322 [debug] [Thread-1 (]: fabric adapter: Rolling back transaction.
+[0m10:55:06.439319 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8: No close available on handle
+[0m10:55:06.447297 [debug] [Thread-1 (]: Database Error in test source_not_null_fabric_onelake_kpi_revenue_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_kpi_revenue_booking_id.sql
+[0m10:55:06.448294 [error] [Thread-1 (]: 4 of 7 ERROR source_not_null_fabric_onelake_kpi_revenue_booking_id ............. [[31mERROR[0m in 0.05s]
+[0m10:55:06.449294 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8
+[0m10:55:06.450291 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06
+[0m10:55:06.451288 [debug] [Thread-4 (]: Marking all children of 'test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8' to be skipped because of status 'error'.  Reason: Database Error in test source_not_null_fabric_onelake_kpi_revenue_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_kpi_revenue_booking_id.sql.
+[0m10:55:06.452284 [info ] [Thread-1 (]: 5 of 7 START test source_unique_fabric_onelake_dim_city_hotel_id ............... [RUN]
+[0m10:55:06.453282 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8, now test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06)
+[0m10:55:06.454279 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06
+[0m10:55:06.468241 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06"
+[0m10:55:06.470236 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06
+[0m10:55:06.478636 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06"
+[0m10:55:06.480624 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06"
+[0m10:55:06.483631 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+select
+    hotel_id as unique_field,
+    count(*) as n_records
+
+from [bronze_booking].[dbo].[dim_city]
+where hotel_id is not null
+group by hotel_id
+having count(*) > 1
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.485615 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:55:06.486616 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m10:55:06.487606 [debug] [Thread-1 (]: fabric adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+select
+    hotel_id as unique_field,
+    count(*) as n_records
+
+from [bronze_booking].[dbo].[dim_city]
+where hotel_id is not null
+group by hotel_id
+having count(*) > 1
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.488603 [debug] [Thread-1 (]: fabric adapter: Rolling back transaction.
+[0m10:55:06.489601 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06: No close available on handle
+[0m10:55:06.503563 [debug] [Thread-1 (]: Database Error in test source_unique_fabric_onelake_dim_city_hotel_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_unique_fabric_onelake_dim_city_hotel_id.sql
+[0m10:55:06.504561 [error] [Thread-1 (]: 5 of 7 ERROR source_unique_fabric_onelake_dim_city_hotel_id .................... [[31mERROR[0m in 0.05s]
+[0m10:55:06.506562 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06
+[0m10:55:06.507553 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165
+[0m10:55:06.510550 [debug] [Thread-4 (]: Marking all children of 'test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06' to be skipped because of status 'error'.  Reason: Database Error in test source_unique_fabric_onelake_dim_city_hotel_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_unique_fabric_onelake_dim_city_hotel_id.sql.
+[0m10:55:06.512540 [info ] [Thread-1 (]: 6 of 7 START test source_unique_fabric_onelake_fact_booking_booking_id ......... [RUN]
+[0m10:55:06.513538 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06, now test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165)
+[0m10:55:06.514535 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165
+[0m10:55:06.530496 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165"
+[0m10:55:06.532486 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165
+[0m10:55:06.538469 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165"
+[0m10:55:06.541463 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165"
+[0m10:55:06.544466 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+select
+    booking_id as unique_field,
+    count(*) as n_records
+
+from [bronze_booking].[dbo].[fact_booking]
+where booking_id is not null
+group by booking_id
+having count(*) > 1
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.546447 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:55:06.548449 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m10:55:06.549441 [debug] [Thread-1 (]: fabric adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+select
+    booking_id as unique_field,
+    count(*) as n_records
+
+from [bronze_booking].[dbo].[fact_booking]
+where booking_id is not null
+group by booking_id
+having count(*) > 1
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.550438 [debug] [Thread-1 (]: fabric adapter: Rolling back transaction.
+[0m10:55:06.551434 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165: No close available on handle
+[0m10:55:06.556422 [debug] [Thread-1 (]: Database Error in test source_unique_fabric_onelake_fact_booking_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_unique_fabric_onelake_fact_booking_booking_id.sql
+[0m10:55:06.558416 [error] [Thread-1 (]: 6 of 7 ERROR source_unique_fabric_onelake_fact_booking_booking_id .............. [[31mERROR[0m in 0.04s]
+[0m10:55:06.560412 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165
+[0m10:55:06.561414 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44
+[0m10:55:06.562406 [debug] [Thread-4 (]: Marking all children of 'test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165' to be skipped because of status 'error'.  Reason: Database Error in test source_unique_fabric_onelake_fact_booking_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_unique_fabric_onelake_fact_booking_booking_id.sql.
+[0m10:55:06.562406 [info ] [Thread-1 (]: 7 of 7 START test source_unique_fabric_onelake_kpi_revenue_booking_id .......... [RUN]
+[0m10:55:06.564401 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165, now test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44)
+[0m10:55:06.564401 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44
+[0m10:55:06.574375 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44"
+[0m10:55:06.578586 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44
+[0m10:55:06.586565 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44"
+[0m10:55:06.589567 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44"
+[0m10:55:06.590558 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+select
+    booking_id as unique_field,
+    count(*) as n_records
+
+from [bronze_booking].[dbo].[kpi_revenue]
+where booking_id is not null
+group by booking_id
+having count(*) > 1
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.597537 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:55:06.599546 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m10:55:06.600531 [debug] [Thread-1 (]: fabric adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+select
+    booking_id as unique_field,
+    count(*) as n_records
+
+from [bronze_booking].[dbo].[kpi_revenue]
+where booking_id is not null
+group by booking_id
+having count(*) > 1
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m10:55:06.602522 [debug] [Thread-1 (]: fabric adapter: Rolling back transaction.
+[0m10:55:06.603522 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44: No close available on handle
+[0m10:55:06.613492 [debug] [Thread-1 (]: Database Error in test source_unique_fabric_onelake_kpi_revenue_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_unique_fabric_onelake_kpi_revenue_booking_id.sql
+[0m10:55:06.615488 [error] [Thread-1 (]: 7 of 7 ERROR source_unique_fabric_onelake_kpi_revenue_booking_id ............... [[31mERROR[0m in 0.05s]
+[0m10:55:06.617483 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44
+[0m10:55:06.618479 [debug] [Thread-4 (]: Marking all children of 'test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44' to be skipped because of status 'error'.  Reason: Database Error in test source_unique_fabric_onelake_kpi_revenue_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_unique_fabric_onelake_kpi_revenue_booking_id.sql.
+[0m10:55:06.621474 [debug] [MainThread]: On master: COMMIT
+[0m10:55:06.623467 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:55:06.624464 [debug] [MainThread]: Connection 'test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44' was properly closed.
+[0m10:55:06.625460 [info ] [MainThread]: 
+[0m10:55:06.627458 [info ] [MainThread]: Finished running 7 data tests in 0 hours 0 minutes and 0.57 seconds (0.57s).
+[0m10:55:06.631444 [debug] [MainThread]: Command end result
+[0m10:55:06.705498 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m10:55:06.711554 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m10:55:06.723515 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\run_results.json
+[0m10:55:06.724505 [info ] [MainThread]: 
+[0m10:55:06.727306 [info ] [MainThread]: [31mCompleted with 7 errors, 0 partial successes, and 0 warnings:[0m
+[0m10:55:06.728303 [info ] [MainThread]: 
+[0m10:55:06.730570 [error] [MainThread]: [31mFailure in test source_not_null_fabric_onelake_dim_city_hotel_id (models\schema.yml)[0m
+[0m10:55:06.731557 [error] [MainThread]:   Database Error in test source_not_null_fabric_onelake_dim_city_hotel_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_dim_city_hotel_id.sql
+[0m10:55:06.733550 [info ] [MainThread]: 
+[0m10:55:06.735543 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_dim_city_hotel_id.sql
+[0m10:55:06.736552 [info ] [MainThread]: 
+[0m10:55:06.737538 [error] [MainThread]: [31mFailure in test source_not_null_fabric_onelake_fact_booking_booking_id (models\schema.yml)[0m
+[0m10:55:06.739538 [error] [MainThread]:   Database Error in test source_not_null_fabric_onelake_fact_booking_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_fact_booking_booking_id.sql
+[0m10:55:06.742525 [info ] [MainThread]: 
+[0m10:55:06.745516 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_fact_booking_booking_id.sql
+[0m10:55:06.747513 [info ] [MainThread]: 
+[0m10:55:06.751500 [error] [MainThread]: [31mFailure in test source_not_null_fabric_onelake_fact_booking_hotel_id (models\schema.yml)[0m
+[0m10:55:06.766031 [error] [MainThread]:   Database Error in test source_not_null_fabric_onelake_fact_booking_hotel_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_fact_booking_hotel_id.sql
+[0m10:55:06.769022 [info ] [MainThread]: 
+[0m10:55:06.774010 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_fact_booking_hotel_id.sql
+[0m10:55:06.785372 [info ] [MainThread]: 
+[0m10:55:06.798789 [error] [MainThread]: [31mFailure in test source_not_null_fabric_onelake_kpi_revenue_booking_id (models\schema.yml)[0m
+[0m10:55:06.802780 [error] [MainThread]:   Database Error in test source_not_null_fabric_onelake_kpi_revenue_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_kpi_revenue_booking_id.sql
+[0m10:55:06.804774 [info ] [MainThread]: 
+[0m10:55:06.806768 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\schema.yml\source_not_null_fabric_onelake_kpi_revenue_booking_id.sql
+[0m10:55:06.815224 [info ] [MainThread]: 
+[0m10:55:06.818218 [error] [MainThread]: [31mFailure in test source_unique_fabric_onelake_dim_city_hotel_id (models\schema.yml)[0m
+[0m10:55:06.819218 [error] [MainThread]:   Database Error in test source_unique_fabric_onelake_dim_city_hotel_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_unique_fabric_onelake_dim_city_hotel_id.sql
+[0m10:55:06.821221 [info ] [MainThread]: 
+[0m10:55:06.822207 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\schema.yml\source_unique_fabric_onelake_dim_city_hotel_id.sql
+[0m10:55:06.824203 [info ] [MainThread]: 
+[0m10:55:06.834072 [error] [MainThread]: [31mFailure in test source_unique_fabric_onelake_fact_booking_booking_id (models\schema.yml)[0m
+[0m10:55:06.836065 [error] [MainThread]:   Database Error in test source_unique_fabric_onelake_fact_booking_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_unique_fabric_onelake_fact_booking_booking_id.sql
+[0m10:55:06.837063 [info ] [MainThread]: 
+[0m10:55:06.839061 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\schema.yml\source_unique_fabric_onelake_fact_booking_booking_id.sql
+[0m10:55:06.841053 [info ] [MainThread]: 
+[0m10:55:06.849033 [error] [MainThread]: [31mFailure in test source_unique_fabric_onelake_kpi_revenue_booking_id (models\schema.yml)[0m
+[0m10:55:06.854027 [error] [MainThread]:   Database Error in test source_unique_fabric_onelake_kpi_revenue_booking_id (models\schema.yml)
+  ('IM002', '[IM002] [Microsoft][ODBC-stuurprogrammabeheer] De naam van de gegevensbron is niet gevonden en er is geen standaardstuurprogramma opgegeven (0) (SQLDriverConnect)')
+  compiled code at target\run\happy_bookings\models\schema.yml\source_unique_fabric_onelake_kpi_revenue_booking_id.sql
+[0m10:55:06.855015 [info ] [MainThread]: 
+[0m10:55:06.857010 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\schema.yml\source_unique_fabric_onelake_kpi_revenue_booking_id.sql
+[0m10:55:06.859006 [info ] [MainThread]: 
+[0m10:55:06.870332 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=7 SKIP=0 NO-OP=0 TOTAL=7
+[0m10:55:06.874320 [debug] [MainThread]: Command `dbt test` failed at 10:55:06.874320 after 5.48 seconds
+[0m10:55:06.877312 [debug] [MainThread]: Flushing usage events
+[0m11:02:53.778591 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 11:02:53.913046 | ae2bb4f5-1aeb-4f25-8b14-6beb7b4eaf49 ==============================
+[0m11:02:53.913046 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:02:53.915040 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m11:02:55.170881 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m11:02:56.097423 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m11:02:56.459454 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:02:56.464441 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m11:02:56.465453 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:02:56.467464 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.happy_bookings
+[0m11:02:56.721210 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m11:02:56.727206 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m11:02:56.865830 [info ] [MainThread]: Found 7 data tests, 3 sources, 525 macros
+[0m11:02:56.870848 [info ] [MainThread]: 
+[0m11:02:56.872812 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:02:56.874843 [info ] [MainThread]: 
+[0m11:02:56.876809 [debug] [MainThread]: Acquiring new fabric connection 'master'
+[0m11:02:56.879467 [debug] [MainThread]: On master: COMMIT
+[0m11:02:56.893412 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8
+[0m11:02:56.897420 [info ] [Thread-1 (]: 1 of 7 START test source_not_null_fabric_onelake_dim_city_hotel_id ............. [RUN]
+[0m11:02:56.900555 [debug] [Thread-1 (]: Acquiring new fabric connection 'test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8'
+[0m11:02:56.902537 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8
+[0m11:02:56.960839 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8"
+[0m11:02:56.967106 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8
+[0m11:02:57.018232 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8"
+[0m11:02:57.021194 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8"
+[0m11:02:57.023221 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select hotel_id
+from [bronze_booking].[dbo].[dim_city]
+where hotel_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m11:02:57.024218 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:02:57.025233 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m11:04:36.558720 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m11:04:37.337262 [debug] [Thread-1 (]: SQL status: OK in 100.000 seconds
+[0m11:04:37.357741 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8: Close
+[0m11:04:37.360495 [info ] [Thread-1 (]: 1 of 7 PASS source_not_null_fabric_onelake_dim_city_hotel_id ................... [[32mPASS[0m in 100.46s]
+[0m11:04:37.362494 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8
+[0m11:04:37.364486 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b
+[0m11:04:37.365483 [info ] [Thread-1 (]: 2 of 7 START test source_not_null_fabric_onelake_fact_booking_booking_id ....... [RUN]
+[0m11:04:37.367480 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_not_null_fabric_onelake_dim_city_hotel_id.a2a86125d8, now test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b)
+[0m11:04:37.369472 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b
+[0m11:04:37.396398 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b"
+[0m11:04:37.399092 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b
+[0m11:04:37.420040 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b"
+[0m11:04:37.429019 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b"
+[0m11:04:37.430009 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select booking_id
+from [bronze_booking].[dbo].[fact_booking]
+where booking_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m11:04:37.432004 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:04:37.433999 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m11:04:37.434996 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m11:04:38.065918 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m11:04:38.070906 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b: Close
+[0m11:04:38.073897 [info ] [Thread-1 (]: 2 of 7 PASS source_not_null_fabric_onelake_fact_booking_booking_id ............. [[32mPASS[0m in 0.71s]
+[0m11:04:38.080005 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b
+[0m11:04:38.081999 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e
+[0m11:04:38.082996 [info ] [Thread-1 (]: 3 of 7 START test source_not_null_fabric_onelake_fact_booking_hotel_id ......... [RUN]
+[0m11:04:38.086984 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_not_null_fabric_onelake_fact_booking_booking_id.ddc5cf7a1b, now test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e)
+[0m11:04:38.088979 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e
+[0m11:04:38.108928 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e"
+[0m11:04:38.117904 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e
+[0m11:04:38.168292 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e"
+[0m11:04:38.179226 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e"
+[0m11:04:38.182219 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select hotel_id
+from [bronze_booking].[dbo].[fact_booking]
+where hotel_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m11:04:38.184213 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:04:38.189199 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m11:04:38.194730 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m11:04:38.583889 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:04:38.589464 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e: Close
+[0m11:04:38.591268 [info ] [Thread-1 (]: 3 of 7 PASS source_not_null_fabric_onelake_fact_booking_hotel_id ............... [[32mPASS[0m in 0.50s]
+[0m11:04:38.600252 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e
+[0m11:04:38.602237 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8
+[0m11:04:38.604232 [info ] [Thread-1 (]: 4 of 7 START test source_not_null_fabric_onelake_kpi_revenue_booking_id ........ [RUN]
+[0m11:04:38.619191 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_not_null_fabric_onelake_fact_booking_hotel_id.c5da91d43e, now test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8)
+[0m11:04:38.620189 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8
+[0m11:04:38.640153 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8"
+[0m11:04:38.644125 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8
+[0m11:04:38.655096 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8"
+[0m11:04:38.667079 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8"
+[0m11:04:38.669074 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+
+
+select booking_id
+from [bronze_booking].[dbo].[kpi_revenue]
+where booking_id is null
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m11:04:38.670070 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:04:38.672066 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m11:04:38.674072 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m11:04:39.415733 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m11:04:39.421712 [debug] [Thread-1 (]: On test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8: Close
+[0m11:04:39.426703 [info ] [Thread-1 (]: 4 of 7 PASS source_not_null_fabric_onelake_kpi_revenue_booking_id .............. [[32mPASS[0m in 0.81s]
+[0m11:04:39.507899 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8
+[0m11:04:39.510340 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06
+[0m11:04:39.512335 [info ] [Thread-1 (]: 5 of 7 START test source_unique_fabric_onelake_dim_city_hotel_id ............... [RUN]
+[0m11:04:39.605172 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_not_null_fabric_onelake_kpi_revenue_booking_id.b27c9793f8, now test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06)
+[0m11:04:39.611147 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06
+[0m11:04:39.648053 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06"
+[0m11:04:39.655030 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06
+[0m11:04:39.685948 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06"
+[0m11:04:39.707891 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06"
+[0m11:04:39.709889 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+select
+    hotel_id as unique_field,
+    count(*) as n_records
+
+from [bronze_booking].[dbo].[dim_city]
+where hotel_id is not null
+group by hotel_id
+having count(*) > 1
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m11:04:39.710882 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:04:39.712877 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m11:04:39.714872 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m11:04:39.786485 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:04:39.793409 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06: Close
+[0m11:04:39.795414 [info ] [Thread-1 (]: 5 of 7 PASS source_unique_fabric_onelake_dim_city_hotel_id ..................... [[32mPASS[0m in 0.19s]
+[0m11:04:39.806953 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06
+[0m11:04:39.807952 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165
+[0m11:04:39.809944 [info ] [Thread-1 (]: 6 of 7 START test source_unique_fabric_onelake_fact_booking_booking_id ......... [RUN]
+[0m11:04:39.819209 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_unique_fabric_onelake_dim_city_hotel_id.d506499f06, now test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165)
+[0m11:04:39.820199 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165
+[0m11:04:39.849362 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165"
+[0m11:04:39.854349 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165
+[0m11:04:39.903418 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165"
+[0m11:04:39.908937 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165"
+[0m11:04:39.910937 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+select
+    booking_id as unique_field,
+    count(*) as n_records
+
+from [bronze_booking].[dbo].[fact_booking]
+where booking_id is not null
+group by booking_id
+having count(*) > 1
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m11:04:39.913923 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:04:39.915921 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m11:04:39.917913 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m11:04:40.287089 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:04:40.294072 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165: Close
+[0m11:04:40.296067 [info ] [Thread-1 (]: 6 of 7 PASS source_unique_fabric_onelake_fact_booking_booking_id ............... [[32mPASS[0m in 0.48s]
+[0m11:04:40.302050 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165
+[0m11:04:40.303046 [debug] [Thread-1 (]: Began running node test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44
+[0m11:04:40.304045 [info ] [Thread-1 (]: 7 of 7 START test source_unique_fabric_onelake_kpi_revenue_booking_id .......... [RUN]
+[0m11:04:40.341911 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.happy_bookings.source_unique_fabric_onelake_fact_booking_booking_id.e200385165, now test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44)
+[0m11:04:40.351417 [debug] [Thread-1 (]: Began compiling node test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44
+[0m11:04:40.479060 [debug] [Thread-1 (]: Writing injected SQL for node "test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44"
+[0m11:04:40.494021 [debug] [Thread-1 (]: Began executing node test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44
+[0m11:04:40.517948 [debug] [Thread-1 (]: Writing runtime sql for node "test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44"
+[0m11:04:40.533925 [debug] [Thread-1 (]: Using fabric connection "test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44"
+[0m11:04:40.535899 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44"} */
+
+    
+    with test_main_sql as (
+  
+    
+    
+    
+
+select
+    booking_id as unique_field,
+    count(*) as n_records
+
+from [bronze_booking].[dbo].[kpi_revenue]
+where booking_id is not null
+group by booking_id
+having count(*) > 1
+
+
+
+  
+  ),
+  dbt_internal_test as (
+    select  * from test_main_sql
+  )
+  select
+    count(*) as failures,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_warn,
+    case when count(*) != 0
+      then 'true' else 'false' end as should_error
+  from dbt_internal_test
+[0m11:04:40.537894 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:04:40.543885 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m11:04:40.546871 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m11:04:40.895942 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:04:40.898933 [debug] [Thread-1 (]: On test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44: Close
+[0m11:04:40.900930 [info ] [Thread-1 (]: 7 of 7 PASS source_unique_fabric_onelake_kpi_revenue_booking_id ................ [[32mPASS[0m in 0.56s]
+[0m11:04:40.901928 [debug] [Thread-1 (]: Finished running node test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44
+[0m11:04:40.912985 [debug] [MainThread]: On master: COMMIT
+[0m11:04:40.918958 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:04:40.922945 [debug] [MainThread]: Connection 'test.happy_bookings.source_unique_fabric_onelake_kpi_revenue_booking_id.f489b95b44' was properly closed.
+[0m11:04:40.925931 [info ] [MainThread]: 
+[0m11:04:40.927301 [info ] [MainThread]: Finished running 7 data tests in 0 hours 1 minutes and 44.05 seconds (104.05s).
+[0m11:04:40.932344 [debug] [MainThread]: Command end result
+[0m11:04:41.026452 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m11:04:41.032437 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m11:04:41.045803 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\run_results.json
+[0m11:04:41.046810 [info ] [MainThread]: 
+[0m11:04:41.047799 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:04:41.048795 [info ] [MainThread]: 
+[0m11:04:41.049793 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m11:04:41.051792 [debug] [MainThread]: Command `dbt test` succeeded at 11:04:41.051792 after 107.38 seconds
+[0m11:04:41.052788 [debug] [MainThread]: Flushing usage events
