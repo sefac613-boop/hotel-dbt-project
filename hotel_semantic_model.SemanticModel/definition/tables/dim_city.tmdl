@@ -1,0 +1,66 @@
+table dim_city
+	lineageTag: a28653d3-02cd-44c9-b6aa-339dfb0474e1
+	sourceLineageTag: [dbo].[dim_city]
+
+	column hotel_id
+		dataType: string
+		lineageTag: f0313573-598d-43a3-80cf-2e0369242c74
+		sourceLineageTag: hotel_id
+		summarizeBy: none
+		sourceColumn: hotel_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column hotel_name
+		dataType: string
+		lineageTag: 8ab6a456-6d8b-467f-98c9-e0258ee7e34f
+		sourceLineageTag: hotel_name
+		summarizeBy: none
+		sourceColumn: hotel_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 8ac94d3e-a6ca-40d7-8be4-3dc9ad5afbf0
+		sourceLineageTag: city
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 0860e56d-41d9-4e78-b72e-01586390cd74
+		sourceLineageTag: country
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column hotel_type
+		dataType: string
+		lineageTag: 859e21d0-17fe-45df-92c9-c430b8db3a88
+		sourceLineageTag: hotel_type
+		summarizeBy: none
+		sourceColumn: hotel_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column star_rating
+		dataType: int64
+		formatString: 0
+		lineageTag: b3ab8bb9-f20a-4d77-b386-5fc4c6e1adb4
+		sourceLineageTag: star_rating
+		summarizeBy: sum
+		sourceColumn: star_rating
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_city = entity
+		mode: directLake
+		source
+			entityName: dim_city
+			schemaName: dbo
+			expressionSource: 'DirectLake - bronze_booking'
+

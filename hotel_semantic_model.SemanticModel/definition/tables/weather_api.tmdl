@@ -1,0 +1,51 @@
+table weather_api
+	lineageTag: 32be7b43-ea19-43fc-b580-33438e25b873
+	sourceLineageTag: [dbo].[weather_api]
+
+	column date
+		dataType: string
+		lineageTag: b768d692-abc3-4946-a828-ac614cda34d8
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 755cf3a5-53f5-4719-8357-52fc6d49ffd1
+		sourceLineageTag: city
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column temp_max_c
+		dataType: double
+		lineageTag: 815f7a8b-b473-4297-9d56-e642c9a14a8e
+		sourceLineageTag: temp_max_c
+		summarizeBy: sum
+		sourceColumn: temp_max_c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column precip_mm
+		dataType: double
+		lineageTag: 315bcfb3-df43-4272-8ef6-dc96685886e9
+		sourceLineageTag: precip_mm
+		summarizeBy: sum
+		sourceColumn: precip_mm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition weather_api = entity
+		mode: directLake
+		source
+			entityName: weather_api
+			schemaName: dbo
+			expressionSource: 'DirectLake - bronze_booking'
+

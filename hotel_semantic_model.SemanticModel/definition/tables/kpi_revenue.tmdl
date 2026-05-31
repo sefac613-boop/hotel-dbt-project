@@ -1,0 +1,59 @@
+table kpi_revenue
+	lineageTag: a90e4f1f-8b0d-4252-be37-85b0ff673e8a
+	sourceLineageTag: [dbo].[kpi_revenue]
+
+	column booking_id
+		dataType: string
+		lineageTag: 89aa5d6d-9e29-4ac4-99f5-dd99fc1c4c67
+		sourceLineageTag: booking_id
+		summarizeBy: none
+		sourceColumn: booking_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_price
+		dataType: double
+		lineageTag: 9d38d7f1-a700-4d3b-9c98-0795d01964fd
+		sourceLineageTag: total_price
+		summarizeBy: sum
+		sourceColumn: total_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column booking_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 0b015a96-6d03-43b2-ad86-a7829734128e
+		sourceLineageTag: booking_date
+		summarizeBy: none
+		sourceColumn: booking_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column booking_channel
+		dataType: string
+		lineageTag: 5879c374-7c40-4c62-a306-3684a61e99a5
+		sourceLineageTag: booking_channel
+		summarizeBy: none
+		sourceColumn: booking_channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_cancelled
+		dataType: string
+		lineageTag: 84484141-652a-48de-bed3-e593a8eb9398
+		sourceLineageTag: is_cancelled
+		summarizeBy: none
+		sourceColumn: is_cancelled
+
+		annotation SummarizationSetBy = Automatic
+
+	partition kpi_revenue = entity
+		mode: directLake
+		source
+			entityName: kpi_revenue
+			schemaName: dbo
+			expressionSource: 'DirectLake - bronze_booking'
+

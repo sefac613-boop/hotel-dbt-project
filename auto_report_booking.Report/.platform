@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "auto_report_booking"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8390325d-487f-a3e6-4155-66e9bd3b6889"
+  }
+}

@@ -1,0 +1,165 @@
+table fact_booking
+	lineageTag: 970c1676-bc2b-48a8-bb5c-76da77601263
+	sourceLineageTag: [dbo].[fact_booking]
+
+	column booking_id
+		dataType: string
+		lineageTag: e8b7e139-338d-45b7-a6fd-eeed6ecb065d
+		sourceLineageTag: booking_id
+		summarizeBy: none
+		sourceColumn: booking_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column hotel_id
+		dataType: string
+		lineageTag: 3816c820-146b-41a0-8b61-b83cf431e5fd
+		sourceLineageTag: hotel_id
+		summarizeBy: none
+		sourceColumn: hotel_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: string
+		lineageTag: 9734925d-70fd-4e9f-b9a4-80f50d559095
+		sourceLineageTag: customer_id
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column booking_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 88072252-047e-4743-af9d-1683ce961fed
+		sourceLineageTag: booking_date
+		summarizeBy: none
+		sourceColumn: booking_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column checkin_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 2b4a7e71-b1af-45c0-8e49-055cc8df211f
+		sourceLineageTag: checkin_date
+		summarizeBy: none
+		sourceColumn: checkin_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column checkout_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: cd0997c0-49c5-4841-b73b-d10054b9146f
+		sourceLineageTag: checkout_date
+		summarizeBy: none
+		sourceColumn: checkout_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column nights
+		dataType: int64
+		formatString: 0
+		lineageTag: a5280e28-cc00-464a-af0f-1338dc916d89
+		sourceLineageTag: nights
+		summarizeBy: sum
+		sourceColumn: nights
+
+		annotation SummarizationSetBy = Automatic
+
+	column room_type
+		dataType: string
+		lineageTag: 525ee31d-d8f0-4837-a9c6-ff110689298b
+		sourceLineageTag: room_type
+		summarizeBy: none
+		sourceColumn: room_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column booking_channel
+		dataType: string
+		lineageTag: 6268eec3-94ac-4a7a-99a4-7f1edec870a6
+		sourceLineageTag: booking_channel
+		summarizeBy: none
+		sourceColumn: booking_channel
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_price
+		dataType: double
+		lineageTag: 605f5fec-7a6d-4e6b-92ed-7cd517e845b3
+		sourceLineageTag: total_price
+		summarizeBy: sum
+		sourceColumn: total_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column is_cancelled
+		dataType: string
+		lineageTag: e563321f-df75-4481-b66b-f9525234bbc2
+		sourceLineageTag: is_cancelled
+		summarizeBy: none
+		sourceColumn: is_cancelled
+
+		annotation SummarizationSetBy = Automatic
+
+	column cancellation_reason
+		dataType: string
+		lineageTag: 5959878a-2646-4743-ae19-80eedbd7b431
+		sourceLineageTag: cancellation_reason
+		summarizeBy: none
+		sourceColumn: cancellation_reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_status
+		dataType: string
+		lineageTag: 599ac4a6-d58f-4420-9195-2042cdebe90b
+		sourceLineageTag: payment_status
+		summarizeBy: none
+		sourceColumn: payment_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column satisfaction_score
+		dataType: int64
+		formatString: 0
+		lineageTag: 2248c5c1-b2bb-4327-bf5a-23654194b2bd
+		sourceLineageTag: satisfaction_score
+		summarizeBy: sum
+		sourceColumn: satisfaction_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column minibar_charged
+		dataType: double
+		lineageTag: 4b5131af-72aa-4e19-a513-36dd35cc6d4b
+		sourceLineageTag: minibar_charged
+		summarizeBy: sum
+		sourceColumn: minibar_charged
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column late_checkout
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4de4cd74-624f-4c57-8d36-8719cca44b34
+		sourceLineageTag: late_checkout
+		summarizeBy: none
+		sourceColumn: late_checkout
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fact_booking = entity
+		mode: directLake
+		source
+			entityName: fact_booking
+			schemaName: dbo
+			expressionSource: 'DirectLake - bronze_booking'
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Happy_booking_semantic_model"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "337263de-1643-bf8f-4c8d-2ee7a639dde4"
+  }
+}

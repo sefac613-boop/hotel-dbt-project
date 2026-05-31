@@ -1,0 +1,115 @@
+table silver_events
+	lineageTag: ba165e26-264f-4f20-b996-1243adf1c4d3
+	sourceLineageTag: [dbo].[silver_events]
+
+	column event_type
+		dataType: string
+		lineageTag: ade74ef5-8a4d-4aae-bbff-10815783626c
+		sourceLineageTag: event_type
+		summarizeBy: none
+		sourceColumn: event_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_id
+		dataType: string
+		lineageTag: 7024364e-87a1-44c1-a021-8a5e7231f750
+		sourceLineageTag: event_id
+		summarizeBy: none
+		sourceColumn: event_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_ts
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 7414079c-5ac7-4f4d-951d-3baa7aebb9ec
+		sourceLineageTag: event_ts
+		summarizeBy: none
+		sourceColumn: event_ts
+
+		annotation SummarizationSetBy = Automatic
+
+	column hotel_id
+		dataType: string
+		lineageTag: c5f9ed10-60db-474a-b6fa-fc54313fbeba
+		sourceLineageTag: hotel_id
+		summarizeBy: none
+		sourceColumn: hotel_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column hotel_name
+		dataType: string
+		lineageTag: 016060b7-9cb3-4da2-8ece-120211a8bf7b
+		sourceLineageTag: hotel_name
+		summarizeBy: none
+		sourceColumn: hotel_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column city
+		dataType: string
+		lineageTag: 4998421c-a5b3-4aad-bbc2-12c05674d90a
+		sourceLineageTag: city
+		summarizeBy: none
+		sourceColumn: city
+
+		annotation SummarizationSetBy = Automatic
+
+	column booking_id
+		dataType: string
+		lineageTag: 32fd393d-3060-4de2-9f97-a637d409db84
+		sourceLineageTag: booking_id
+		summarizeBy: none
+		sourceColumn: booking_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column guest_id
+		dataType: string
+		lineageTag: a2454c41-2257-45e6-b65d-1531af9cd060
+		sourceLineageTag: guest_id
+		summarizeBy: none
+		sourceColumn: guest_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column satisfaction_score
+		dataType: int64
+		formatString: 0
+		lineageTag: d1986332-7802-4a19-a192-7b7b54adc750
+		sourceLineageTag: satisfaction_score
+		summarizeBy: sum
+		sourceColumn: satisfaction_score
+
+		annotation SummarizationSetBy = Automatic
+
+	column minibar_charged
+		dataType: double
+		lineageTag: d14b65a5-9c48-4182-ab9f-db297e1e03a1
+		sourceLineageTag: minibar_charged
+		summarizeBy: sum
+		sourceColumn: minibar_charged
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column late_checkout
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e7a8993d-e227-47dc-918d-b030d4449bdc
+		sourceLineageTag: late_checkout
+		summarizeBy: none
+		sourceColumn: late_checkout
+
+		annotation SummarizationSetBy = Automatic
+
+	partition silver_events = entity
+		mode: directLake
+		source
+			entityName: silver_events
+			schemaName: dbo
+			expressionSource: 'DirectLake - bronze_booking'
+

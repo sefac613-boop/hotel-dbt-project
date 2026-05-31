@@ -1,0 +1,9 @@
+expression 'DirectLake - bronze_booking' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/0999e6f2-dc46-4be3-bdc3-ec78ffa14baf/b9dbacf7-62f0-4c7a-ac5f-1075b6f945e0", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 111e3182-77b7-4fdb-b44f-9b0001be1716
+
+	annotation PBI_IncludeFutureArtifacts = False
+

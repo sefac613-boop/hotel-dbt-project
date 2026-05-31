@@ -1,0 +1,49 @@
+table currency_api
+	lineageTag: ac73a2c2-27f3-4755-ae20-5e7e6a92db3a
+	sourceLineageTag: [dbo].[currency_api]
+
+	column date
+		dataType: string
+		lineageTag: be61a972-0ab6-40e2-8f3a-4e933477f1df
+		sourceLineageTag: date
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+	column from
+		dataType: string
+		lineageTag: 95e45835-459e-429b-960f-f06272efe029
+		sourceLineageTag: from
+		summarizeBy: none
+		sourceColumn: from
+
+		annotation SummarizationSetBy = Automatic
+
+	column to
+		dataType: string
+		lineageTag: 6d7e3ed8-278e-45e5-ad58-859837a39c9d
+		sourceLineageTag: to
+		summarizeBy: none
+		sourceColumn: to
+
+		annotation SummarizationSetBy = Automatic
+
+	column rate
+		dataType: double
+		lineageTag: 09ddd4a0-6610-4803-8b84-541733aeb442
+		sourceLineageTag: rate
+		summarizeBy: sum
+		sourceColumn: rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition currency_api = entity
+		mode: directLake
+		source
+			entityName: currency_api
+			schemaName: dbo
+			expressionSource: 'DirectLake - bronze_booking'
+
