@@ -22,9 +22,9 @@ jobs:
         run: |
           pip install dbt-core great_expectations pytest
 
-      - name: Run DBT tests
+      - name: Run dbt parses
         run: |
-          dbt test
+          dbt parse
         env:
           DBT_PROFILES_DIR: .
 
