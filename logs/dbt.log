@@ -1116,3 +1116,1128 @@ having count(*) > 1
 [0m11:04:41.049793 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
 [0m11:04:41.051792 [debug] [MainThread]: Command `dbt test` succeeded at 11:04:41.051792 after 107.38 seconds
 [0m11:04:41.052788 [debug] [MainThread]: Flushing usage events
+==================== 2026-05-31T09:58:47.996405Z | 019e7d78-c7ac-7210-9065-eb7dd63e3cc9 ====================
+09:58:47.997933 [info ]: dbt-fusion 2.0.0-preview.178
+09:58:48.227527 [info ]: 
+==================== Execution Summary =====================
+Finished 'deps' successfully [231ms]
+==================== 2026-05-31T10:00:50.403063Z | 019e7d7a-a5df-7ab2-b93e-3b767b457769 ====================
+10:00:50.403955 [info ]: dbt-fusion 2.0.0-preview.178
+10:00:50.408285 [info ]: Started loading project
+10:00:50.438917 [info ]: Loading ~/.dbt/profiles.yml
+10:00:50.440634 [info ]: Finished loading project [  0.03s]
+10:00:50.446018 [error]: [InvalidConfig (dbt1005)]: The 'fabric' adapter is not yet supported by dbt Fusion. Supported adapters: snowflake, bigquery, databricks, redshift
+10:00:50.591401 [info ]: 
+==================== Execution Summary =====================
+Finished 'debug' with 1 error [188ms]
+[0m12:05:06.501961 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 12:05:06.622755 | 2975b16c-660e-4d66-a194-5eab10a3636b ==============================
+[0m12:05:06.622755 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:05:06.624756 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m12:05:06.721612 [info ] [MainThread]: dbt version: 1.11.11
+[0m12:05:06.723608 [info ] [MainThread]: python version: 3.12.10
+[0m12:05:06.724605 [info ] [MainThread]: python path: C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Scripts\python.exe
+[0m12:05:06.726599 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:05:13.638210 [info ] [MainThread]: Using profiles dir at C:\Users\user1\.dbt
+[0m12:05:13.639212 [info ] [MainThread]: Using profiles.yml file at C:\Users\user1\.dbt\profiles.yml
+[0m12:05:13.640202 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\dbt_project.yml
+[0m12:05:13.642062 [info ] [MainThread]: adapter type: fabric
+[0m12:05:13.647052 [info ] [MainThread]: adapter version: 1.10.0
+[0m12:05:14.249900 [info ] [MainThread]: Configuration:
+[0m12:05:14.250917 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:05:14.252893 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:05:14.253892 [info ] [MainThread]: Required dependencies:
+[0m12:05:14.254887 [debug] [MainThread]: Executing "git --help"
+[0m12:05:14.341885 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:05:14.343741 [debug] [MainThread]: STDERR: "b''"
+[0m12:05:14.345338 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:05:14.346339 [info ] [MainThread]: Connection:
+[0m12:05:14.347333 [info ] [MainThread]:   server: pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com
+[0m12:05:14.348342 [info ] [MainThread]:   database: bronze_booking
+[0m12:05:14.348342 [info ] [MainThread]:   schema: dbo
+[0m12:05:14.349331 [info ] [MainThread]:   warehouse_snapshot_name: None
+[0m12:05:14.350328 [info ] [MainThread]:   snapshot_timestamp: None
+[0m12:05:14.351325 [info ] [MainThread]:   UID: None
+[0m12:05:14.352322 [info ] [MainThread]:   workspace_id: None
+[0m12:05:14.353320 [info ] [MainThread]:   authentication: ActiveDirectoryInteractive
+[0m12:05:14.354322 [info ] [MainThread]:   retries: 3
+[0m12:05:14.355312 [info ] [MainThread]:   login_timeout: 0
+[0m12:05:14.356312 [info ] [MainThread]:   query_timeout: 0
+[0m12:05:14.357314 [info ] [MainThread]:   trace_flag: False
+[0m12:05:14.359314 [info ] [MainThread]:   encrypt: True
+[0m12:05:14.361298 [info ] [MainThread]:   trust_cert: False
+[0m12:05:14.366034 [info ] [MainThread]:   api_url: https://api.fabric.microsoft.com/v1
+[0m12:05:14.367025 [info ] [MainThread]:   pooling: True
+[0m12:05:14.369020 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m12:05:14.952548 [debug] [MainThread]: Acquiring new fabric connection 'debug'
+[0m12:05:14.953560 [debug] [MainThread]: Using fabric connection "debug"
+[0m12:05:14.954580 [debug] [MainThread]: On debug: select 1 as id
+[0m12:05:14.954580 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:05:14.955589 [debug] [MainThread]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:06:03.658069 [debug] [MainThread]: fabric adapter: Connected to db: bronze_booking
+[0m12:06:03.670999 [debug] [MainThread]: SQL status: OK in 49.000 seconds
+[0m12:06:03.673026 [debug] [MainThread]: On debug: Close
+[0m12:06:03.674142 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:06:03.676137 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:06:03.678902 [debug] [MainThread]: Command `dbt debug` succeeded at 12:06:03.677861 after 57.30 seconds
+[0m12:06:03.678902 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:06:03.679886 [debug] [MainThread]: Flushing usage events
+[0m12:07:30.716226 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 12:07:30.848370 | 03df7d2c-b736-47f6-89c0-fae44c21adf9 ==============================
+[0m12:07:30.848370 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:07:30.850367 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m12:07:32.480856 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m12:07:33.219014 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m12:07:36.068720 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:07:36.069710 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m12:07:36.069710 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:07:36.072768 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.happy_bookings
+[0m12:07:36.341716 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m12:07:36.348746 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m12:07:36.383390 [info ] [MainThread]: Found 7 data tests, 3 sources, 525 macros
+[0m12:07:36.468934 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m12:07:36.476452 [debug] [MainThread]: Command end result
+[0m12:07:36.555485 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m12:07:36.562783 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m12:07:36.570584 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\run_results.json
+[0m12:07:36.573585 [debug] [MainThread]: Command `dbt run` succeeded at 12:07:36.572580 after 5.99 seconds
+[0m12:07:36.574274 [debug] [MainThread]: Flushing usage events
+[0m12:13:57.177525 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 12:13:57.299243 | d91eb4df-f81d-4741-a75a-727b8a5e3d0c ==============================
+[0m12:13:57.299243 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:13:57.299243 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m12:13:58.819556 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m12:13:59.590768 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m12:13:59.991429 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m12:13:59.991429 [debug] [MainThread]: Partial parsing: added file: happy_bookings://models\happy_bookings\kpi_revenue.sql
+[0m12:13:59.991429 [debug] [MainThread]: Partial parsing: added file: happy_bookings://models\happy_bookings\fact_booking.sql
+[0m12:13:59.991429 [debug] [MainThread]: Partial parsing: added file: happy_bookings://models\happy_bookings\dim_city.sql
+[0m12:14:01.423486 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m12:14:01.423486 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m12:14:01.454732 [info ] [MainThread]: Found 7 data tests, 3 models, 3 sources, 525 macros
+[0m12:14:01.477112 [info ] [MainThread]: 
+[0m12:14:01.479075 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:14:01.481083 [info ] [MainThread]: 
+[0m12:14:01.483064 [debug] [MainThread]: Acquiring new fabric connection 'master'
+[0m12:14:01.505674 [debug] [ThreadPool]: Acquiring new fabric connection 'list_bronze_booking'
+[0m12:14:01.566008 [debug] [ThreadPool]: dbt-fabric
+[0m12:14:01.567014 [debug] [ThreadPool]: Using fabric connection "list_bronze_booking"
+[0m12:14:01.568009 [debug] [ThreadPool]: On list_bronze_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "connection_name": "list_bronze_booking"} */
+USE [bronze_booking];
+    select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+  
+[0m12:14:01.568009 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:14:01.569012 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:14:47.678747 [debug] [ThreadPool]: fabric adapter: Connected to db: bronze_booking
+[0m12:14:47.679746 [warn ] [ThreadPool]: fabric adapter: No workspace_id provided; skipping snapshot management.
+[0m12:14:47.699536 [debug] [ThreadPool]: SQL status: OK in 46.000 seconds
+[0m12:14:47.706318 [debug] [ThreadPool]: On list_bronze_booking: Close
+[0m12:14:47.764319 [debug] [ThreadPool]: Acquiring new fabric connection 'list_bronze_booking_dbo'
+[0m12:14:47.797493 [debug] [ThreadPool]: dbt-fabric
+[0m12:14:47.798491 [debug] [ThreadPool]: Using fabric connection "list_bronze_booking_dbo"
+[0m12:14:47.800484 [debug] [ThreadPool]: On list_bronze_booking_dbo: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "connection_name": "list_bronze_booking_dbo"} */
+USE [bronze_booking];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      where SCHEMA_NAME(t.schema_id) like 'dbo'
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+      where SCHEMA_NAME(v.schema_id) like 'dbo'
+    )
+    select * from base
+    
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+  
+[0m12:14:47.801486 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:14:47.803483 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:14:47.808281 [debug] [ThreadPool]: fabric adapter: Connected to db: bronze_booking
+[0m12:14:47.868276 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:14:47.872267 [debug] [ThreadPool]: On list_bronze_booking_dbo: Close
+[0m12:14:47.873308 [debug] [MainThread]: On master: COMMIT
+[0m12:14:47.888931 [debug] [Thread-1 (]: Began running node model.happy_bookings.dim_city
+[0m12:14:47.888931 [info ] [Thread-1 (]: 1 of 3 START sql table model dbo.dim_city ...................................... [RUN]
+[0m12:14:47.888931 [debug] [Thread-1 (]: Acquiring new fabric connection 'model.happy_bookings.dim_city'
+[0m12:14:47.888931 [debug] [Thread-1 (]: Began compiling node model.happy_bookings.dim_city
+[0m12:14:47.924803 [debug] [Thread-1 (]: Writing injected SQL for node "model.happy_bookings.dim_city"
+[0m12:14:47.930577 [debug] [Thread-1 (]: Began executing node model.happy_bookings.dim_city
+[0m12:14:48.052413 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[dim_city__dbt_temp]
+[0m12:14:48.068033 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.dim_city"
+[0m12:14:48.068033 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.dim_city"} */
+
+      
+    USE [bronze_booking];
+    EXEC('DROP table IF EXISTS [dbo].[dim_city__dbt_temp];');
+
+[0m12:14:48.083654 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:14:48.083654 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:14:48.083654 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m12:14:48.099276 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:48.117829 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[dim_city__dbt_temp__dbt_tmp_vw]
+[0m12:14:48.121772 [debug] [Thread-1 (]: dbt-fabric
+[0m12:14:48.124634 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.dim_city"
+[0m12:14:48.126630 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.dim_city"} */
+
+        USE [bronze_booking];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'bronze_booking'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'dim_city__dbt_temp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+      
+[0m12:14:48.221607 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:48.221607 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.dim_city"
+[0m12:14:48.221607 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.dim_city"} */
+
+      
+      
+    
+    USE [bronze_booking];
+    EXEC('DROP view IF EXISTS [dbo].[dim_city__dbt_temp__dbt_tmp_vw];');
+
+[0m12:14:48.237237 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:48.271646 [debug] [Thread-1 (]: dbt-fabric
+[0m12:14:48.287268 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[dim_city__dbt_temp__dbt_tmp_vw]
+[0m12:14:48.287268 [debug] [Thread-1 (]: dbt-fabric
+[0m12:14:48.287268 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.dim_city"
+[0m12:14:48.287268 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.dim_city"} */
+
+        USE [bronze_booking];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'bronze_booking'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'dim_city__dbt_temp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+      
+[0m12:14:48.302886 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:48.318516 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.dim_city"
+[0m12:14:48.318516 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.dim_city"} */
+
+      
+      
+    
+    USE [bronze_booking];
+    EXEC('DROP view IF EXISTS [dbo].[dim_city__dbt_temp__dbt_tmp_vw];');
+
+[0m12:14:48.334129 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:48.365399 [debug] [Thread-1 (]: Writing runtime sql for node "model.happy_bookings.dim_city"
+[0m12:14:48.365399 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.dim_city"
+[0m12:14:48.365399 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.dim_city"} */
+
+  
+    
+    
+    USE [bronze_booking];
+    
+    
+
+    EXEC('create view [dbo].[dim_city__dbt_temp__dbt_tmp_vw] as SELECT * FROM [bronze_booking].[dbo].[dim_city];');
+
+
+
+
+    
+    
+
+    
+    
+            EXEC('CREATE TABLE [bronze_booking].[dbo].[dim_city__dbt_temp]  AS SELECT * FROM [bronze_booking].[dbo].[dim_city__dbt_temp__dbt_tmp_vw] 
+    OPTION (LABEL = ''dbt-fabric-dw'');
+');
+        
+    
+
+
+  
+  
+[0m12:14:51.342234 [debug] [Thread-1 (]: SQL status: OK in 3.000 seconds
+[0m12:14:51.357855 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: Close
+[0m12:14:51.357855 [error] [Thread-1 (]: [31mUnhandled error while executing target\run\happy_bookings\models\happy_bookings\dim_city.sql[0m
+('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)")
+[0m12:14:51.385262 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\base.py", line 363, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\base.py", line 310, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\base.py", line 410, in run
+    return self.execute(compiled_node, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\run.py", line 337, in execute
+    return self._execute_model(hook_ctx, context_config, model, context, materialization_macro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\run.py", line 297, in _execute_model
+    result = MacroGenerator(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\clients\jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 92, in macro
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\clients\jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt_common\record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\adapters\base\impl.py", line 508, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\adapters\fabric\fabric_connection_manager.py", line 782, in execute
+    while cursor.nextset():
+          ^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)")
+
+[0m12:14:51.394912 [error] [Thread-1 (]: 1 of 3 ERROR creating sql table model dbo.dim_city ............................. [[31mERROR[0m in 3.50s]
+[0m12:14:51.394912 [debug] [Thread-1 (]: Finished running node model.happy_bookings.dim_city
+[0m12:14:51.394912 [debug] [Thread-1 (]: Began running node model.happy_bookings.fact_booking
+[0m12:14:51.394912 [debug] [Thread-4 (]: Marking all children of 'model.happy_bookings.dim_city' to be skipped because of status 'error'.  Reason: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)").
+[0m12:14:51.404476 [info ] [Thread-1 (]: 2 of 3 START sql table model dbo.fact_booking .................................. [RUN]
+[0m12:14:51.404476 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.happy_bookings.dim_city, now model.happy_bookings.fact_booking)
+[0m12:14:51.411732 [debug] [Thread-1 (]: Began compiling node model.happy_bookings.fact_booking
+[0m12:14:51.416798 [debug] [Thread-1 (]: Writing injected SQL for node "model.happy_bookings.fact_booking"
+[0m12:14:51.421041 [debug] [Thread-1 (]: Began executing node model.happy_bookings.fact_booking
+[0m12:14:51.443091 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[fact_booking__dbt_temp]
+[0m12:14:51.454771 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.fact_booking"
+[0m12:14:51.454771 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.fact_booking"} */
+
+      
+    USE [bronze_booking];
+    EXEC('DROP table IF EXISTS [dbo].[fact_booking__dbt_temp];');
+
+[0m12:14:51.454771 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:14:51.454771 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:14:51.454771 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m12:14:51.476736 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:51.482887 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[fact_booking__dbt_temp__dbt_tmp_vw]
+[0m12:14:51.484943 [debug] [Thread-1 (]: dbt-fabric
+[0m12:14:51.486949 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.fact_booking"
+[0m12:14:51.488296 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.fact_booking"} */
+
+        USE [bronze_booking];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'bronze_booking'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'fact_booking__dbt_temp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+      
+[0m12:14:51.508674 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:51.508674 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.fact_booking"
+[0m12:14:51.520259 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.fact_booking"} */
+
+      
+      
+    
+    USE [bronze_booking];
+    EXEC('DROP view IF EXISTS [dbo].[fact_booking__dbt_temp__dbt_tmp_vw];');
+
+[0m12:14:51.534998 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:51.538207 [debug] [Thread-1 (]: dbt-fabric
+[0m12:14:51.544191 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[fact_booking__dbt_temp__dbt_tmp_vw]
+[0m12:14:51.548182 [debug] [Thread-1 (]: dbt-fabric
+[0m12:14:51.549179 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.fact_booking"
+[0m12:14:51.550893 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.fact_booking"} */
+
+        USE [bronze_booking];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'bronze_booking'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'fact_booking__dbt_temp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+      
+[0m12:14:51.555397 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:51.555397 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.fact_booking"
+[0m12:14:51.570513 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.fact_booking"} */
+
+      
+      
+    
+    USE [bronze_booking];
+    EXEC('DROP view IF EXISTS [dbo].[fact_booking__dbt_temp__dbt_tmp_vw];');
+
+[0m12:14:51.584016 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:51.588135 [debug] [Thread-1 (]: Writing runtime sql for node "model.happy_bookings.fact_booking"
+[0m12:14:51.590129 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.fact_booking"
+[0m12:14:51.591134 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.fact_booking"} */
+
+  
+    
+    
+    USE [bronze_booking];
+    
+    
+
+    EXEC('create view [dbo].[fact_booking__dbt_temp__dbt_tmp_vw] as SELECT * FROM [bronze_booking].[dbo].[fact_booking];');
+
+
+
+
+    
+    
+
+    
+    
+            EXEC('CREATE TABLE [bronze_booking].[dbo].[fact_booking__dbt_temp]  AS SELECT * FROM [bronze_booking].[dbo].[fact_booking__dbt_temp__dbt_tmp_vw] 
+    OPTION (LABEL = ''dbt-fabric-dw'');
+');
+        
+    
+
+
+  
+  
+[0m12:14:52.553810 [debug] [Thread-1 (]: SQL status: OK in 1.000 seconds
+[0m12:14:52.553810 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: Close
+[0m12:14:52.553810 [error] [Thread-1 (]: [31mUnhandled error while executing target\run\happy_bookings\models\happy_bookings\fact_booking.sql[0m
+('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)")
+[0m12:14:52.553810 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\base.py", line 363, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\base.py", line 310, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\base.py", line 410, in run
+    return self.execute(compiled_node, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\run.py", line 337, in execute
+    return self._execute_model(hook_ctx, context_config, model, context, materialization_macro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\run.py", line 297, in _execute_model
+    result = MacroGenerator(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\clients\jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 92, in macro
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\clients\jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt_common\record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\adapters\base\impl.py", line 508, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\adapters\fabric\fabric_connection_manager.py", line 782, in execute
+    while cursor.nextset():
+          ^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)")
+
+[0m12:14:52.553810 [error] [Thread-1 (]: 2 of 3 ERROR creating sql table model dbo.fact_booking ......................... [[31mERROR[0m in 1.15s]
+[0m12:14:52.570436 [debug] [Thread-1 (]: Finished running node model.happy_bookings.fact_booking
+[0m12:14:52.570436 [debug] [Thread-1 (]: Began running node model.happy_bookings.kpi_revenue
+[0m12:14:52.574800 [debug] [Thread-4 (]: Marking all children of 'model.happy_bookings.fact_booking' to be skipped because of status 'error'.  Reason: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)").
+[0m12:14:52.575791 [info ] [Thread-1 (]: 3 of 3 START sql table model dbo.kpi_revenue ................................... [RUN]
+[0m12:14:52.577370 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.happy_bookings.fact_booking, now model.happy_bookings.kpi_revenue)
+[0m12:14:52.577370 [debug] [Thread-1 (]: Began compiling node model.happy_bookings.kpi_revenue
+[0m12:14:52.577370 [debug] [Thread-1 (]: Writing injected SQL for node "model.happy_bookings.kpi_revenue"
+[0m12:14:52.588592 [debug] [Thread-1 (]: Began executing node model.happy_bookings.kpi_revenue
+[0m12:14:52.607187 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[kpi_revenue__dbt_temp]
+[0m12:14:52.607187 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.kpi_revenue"
+[0m12:14:52.607187 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.kpi_revenue"} */
+
+      
+    USE [bronze_booking];
+    EXEC('DROP table IF EXISTS [dbo].[kpi_revenue__dbt_temp];');
+
+[0m12:14:52.607187 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:14:52.607187 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:14:52.607187 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m12:14:52.621148 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:52.639703 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[kpi_revenue__dbt_temp__dbt_tmp_vw]
+[0m12:14:52.639703 [debug] [Thread-1 (]: dbt-fabric
+[0m12:14:52.639703 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.kpi_revenue"
+[0m12:14:52.639703 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.kpi_revenue"} */
+
+        USE [bronze_booking];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'bronze_booking'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'kpi_revenue__dbt_temp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+      
+[0m12:14:52.679031 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:52.682031 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.kpi_revenue"
+[0m12:14:52.683030 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.kpi_revenue"} */
+
+      
+      
+    
+    USE [bronze_booking];
+    EXEC('DROP view IF EXISTS [dbo].[kpi_revenue__dbt_temp__dbt_tmp_vw];');
+
+[0m12:14:52.696785 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:52.699780 [debug] [Thread-1 (]: dbt-fabric
+[0m12:14:52.705151 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[kpi_revenue__dbt_temp__dbt_tmp_vw]
+[0m12:14:52.709173 [debug] [Thread-1 (]: dbt-fabric
+[0m12:14:52.709173 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.kpi_revenue"
+[0m12:14:52.710170 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.kpi_revenue"} */
+
+        USE [bronze_booking];
+        select
+            sch.name as schema_name,
+            obj.name as view_name
+        from sys.sql_expression_dependencies refs
+        inner join sys.objects obj
+        on refs.referencing_id = obj.object_id
+        inner join sys.schemas sch
+        on obj.schema_id = sch.schema_id
+        where refs.referenced_database_name = 'bronze_booking'
+        and refs.referenced_schema_name = 'dbo'
+        and refs.referenced_entity_name = 'kpi_revenue__dbt_temp__dbt_tmp_vw'
+        and refs.referencing_class = 1
+        and obj.type = 'V'
+        
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+      
+[0m12:14:52.719818 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:52.719818 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.kpi_revenue"
+[0m12:14:52.719818 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.kpi_revenue"} */
+
+      
+      
+    
+    USE [bronze_booking];
+    EXEC('DROP view IF EXISTS [dbo].[kpi_revenue__dbt_temp__dbt_tmp_vw];');
+
+[0m12:14:52.735450 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:52.735450 [debug] [Thread-1 (]: Writing runtime sql for node "model.happy_bookings.kpi_revenue"
+[0m12:14:52.735450 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.kpi_revenue"
+[0m12:14:52.751064 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.kpi_revenue"} */
+
+  
+    
+    
+    USE [bronze_booking];
+    
+    
+
+    EXEC('create view [dbo].[kpi_revenue__dbt_temp__dbt_tmp_vw] as SELECT * FROM [bronze_booking].[dbo].[kpi_revenue];');
+
+
+
+
+    
+    
+
+    
+    
+            EXEC('CREATE TABLE [bronze_booking].[dbo].[kpi_revenue__dbt_temp]  AS SELECT * FROM [bronze_booking].[dbo].[kpi_revenue__dbt_temp__dbt_tmp_vw] 
+    OPTION (LABEL = ''dbt-fabric-dw'');
+');
+        
+    
+
+
+  
+  
+[0m12:14:53.222928 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:14:53.222928 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: Close
+[0m12:14:53.236945 [error] [Thread-1 (]: [31mUnhandled error while executing target\run\happy_bookings\models\happy_bookings\kpi_revenue.sql[0m
+('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)")
+[0m12:14:53.238159 [debug] [Thread-1 (]: Traceback (most recent call last):
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\base.py", line 363, in safe_run
+    result = self.compile_and_execute(manifest, ctx)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\base.py", line 310, in compile_and_execute
+    result = self.run(ctx.node, manifest)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\base.py", line 410, in run
+    return self.execute(compiled_node, manifest)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\run.py", line 337, in execute
+    return self._execute_model(hook_ctx, context_config, model, context, materialization_macro)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\task\run.py", line 297, in _execute_model
+    result = MacroGenerator(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\clients\jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 92, in macro
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\clients\jinja.py", line 82, in __call__
+    return self.call_macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt_common\clients\jinja.py", line 395, in call_macro
+    return macro(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 770, in __call__
+    return self._invoke(arguments, autoescape)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 784, in _invoke
+    rv = self._func(*arguments)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "<template>", line 52, in macro
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\sandbox.py", line 401, in call
+    return __context.call(__obj, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\jinja2\runtime.py", line 303, in call
+    return __obj(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt_common\record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\adapters\base\impl.py", line 508, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\.venv\Lib\site-packages\dbt\adapters\fabric\fabric_connection_manager.py", line 782, in execute
+    while cursor.nextset():
+          ^^^^^^^^^^^^^^^^
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)")
+
+[0m12:14:53.238159 [error] [Thread-1 (]: 3 of 3 ERROR creating sql table model dbo.kpi_revenue .......................... [[31mERROR[0m in 0.66s]
+[0m12:14:53.238159 [debug] [Thread-1 (]: Finished running node model.happy_bookings.kpi_revenue
+[0m12:14:53.247381 [debug] [Thread-4 (]: Marking all children of 'model.happy_bookings.kpi_revenue' to be skipped because of status 'error'.  Reason: ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)").
+[0m12:14:53.252285 [debug] [MainThread]: On master: COMMIT
+[0m12:14:53.253930 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:14:53.254941 [debug] [MainThread]: Connection 'list_bronze_booking' was properly closed.
+[0m12:14:53.255927 [debug] [MainThread]: Connection 'list_bronze_booking_dbo' was properly closed.
+[0m12:14:53.255927 [debug] [MainThread]: Connection 'model.happy_bookings.kpi_revenue' was properly closed.
+[0m12:14:53.258916 [info ] [MainThread]: 
+[0m12:14:53.260774 [info ] [MainThread]: Finished running 3 table models in 0 hours 0 minutes and 51.77 seconds (51.77s).
+[0m12:14:53.260774 [debug] [MainThread]: Command end result
+[0m12:14:53.354748 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m12:14:53.354748 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m12:14:53.370381 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\run_results.json
+[0m12:14:53.370381 [info ] [MainThread]: 
+[0m12:14:53.370381 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m12:14:53.370381 [info ] [MainThread]: 
+[0m12:14:53.370381 [error] [MainThread]: [31mFailure in model dim_city (models\happy_bookings\dim_city.sql)[0m
+[0m12:14:53.370381 [error] [MainThread]:   ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)")
+[0m12:14:53.370381 [info ] [MainThread]: 
+[0m12:14:53.389019 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\happy_bookings\dim_city.sql
+[0m12:14:53.391023 [info ] [MainThread]: 
+[0m12:14:53.392008 [error] [MainThread]: [31mFailure in model fact_booking (models\happy_bookings\fact_booking.sql)[0m
+[0m12:14:53.406932 [error] [MainThread]:   ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)")
+[0m12:14:53.407931 [info ] [MainThread]: 
+[0m12:14:53.409925 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\happy_bookings\fact_booking.sql
+[0m12:14:53.414917 [info ] [MainThread]: 
+[0m12:14:53.416907 [error] [MainThread]: [31mFailure in model kpi_revenue (models\happy_bookings\kpi_revenue.sql)[0m
+[0m12:14:53.418901 [error] [MainThread]:   ('42000', "[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]The external policy action 'Microsoft.Sql/Sqlservers/Databases/Schemas/Tables/Create' was denied on the requested resource. (368) (SQLMoreResults)")
+[0m12:14:53.422926 [info ] [MainThread]: 
+[0m12:14:53.425883 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\happy_bookings\kpi_revenue.sql
+[0m12:14:53.426880 [info ] [MainThread]: 
+[0m12:14:53.428875 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 NO-OP=0 TOTAL=3
+[0m12:14:53.434292 [debug] [MainThread]: Command `dbt run` failed at 12:14:53.434292 after 56.38 seconds
+[0m12:14:53.435292 [debug] [MainThread]: Flushing usage events
+[0m12:14:53.473189 [info ] [MainThread]: fabric adapter: Skipping warehouse snapshot update: error
+[0m12:18:21.772400 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 12:18:21.912891 | a2668639-9355-4817-840c-73a16168ee25 ==============================
+[0m12:18:21.912891 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:18:21.912891 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m12:18:23.039674 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m12:18:24.165997 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m12:18:24.629449 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m12:18:28.999921 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m12:18:28.999921 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m12:18:29.053532 [info ] [MainThread]: Found 3 models, 7 data tests, 3 sources, 525 macros
+[0m12:18:29.053532 [info ] [MainThread]: 
+[0m12:18:29.053532 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:18:29.053532 [info ] [MainThread]: 
+[0m12:18:29.066955 [debug] [MainThread]: Acquiring new fabric connection 'master'
+[0m12:18:29.082905 [debug] [ThreadPool]: Acquiring new fabric connection 'list_bronze_booking'
+[0m12:18:29.129004 [debug] [ThreadPool]: dbt-fabric
+[0m12:18:29.130004 [debug] [ThreadPool]: Using fabric connection "list_bronze_booking"
+[0m12:18:29.130004 [debug] [ThreadPool]: On list_bronze_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "connection_name": "list_bronze_booking"} */
+USE [bronze_booking];
+    select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+  
+[0m12:18:29.130999 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:18:29.132002 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:19:13.316874 [debug] [ThreadPool]: fabric adapter: Connected to db: bronze_booking
+[0m12:19:13.316874 [warn ] [ThreadPool]: fabric adapter: No workspace_id provided; skipping snapshot management.
+[0m12:19:13.334818 [debug] [ThreadPool]: SQL status: OK in 44.000 seconds
+[0m12:19:13.339585 [debug] [ThreadPool]: On list_bronze_booking: Close
+[0m12:19:13.354676 [debug] [ThreadPool]: Acquiring new fabric connection 'list_bronze_booking_dbo'
+[0m12:19:13.371329 [debug] [ThreadPool]: dbt-fabric
+[0m12:19:13.371329 [debug] [ThreadPool]: Using fabric connection "list_bronze_booking_dbo"
+[0m12:19:13.371329 [debug] [ThreadPool]: On list_bronze_booking_dbo: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "connection_name": "list_bronze_booking_dbo"} */
+USE [bronze_booking];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      where SCHEMA_NAME(t.schema_id) like 'dbo'
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+      where SCHEMA_NAME(v.schema_id) like 'dbo'
+    )
+    select * from base
+    
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+  
+[0m12:19:13.371329 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:19:13.392206 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:19:13.394256 [debug] [ThreadPool]: fabric adapter: Connected to db: bronze_booking
+[0m12:19:13.417050 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:19:13.421139 [debug] [ThreadPool]: On list_bronze_booking_dbo: Close
+[0m12:19:13.421139 [debug] [MainThread]: On master: COMMIT
+[0m12:19:13.438065 [debug] [Thread-1 (]: Began running node model.happy_bookings.dim_city
+[0m12:19:13.438065 [info ] [Thread-1 (]: 1 of 3 START sql view model dbo.dim_city ....................................... [RUN]
+[0m12:19:13.438065 [debug] [Thread-1 (]: Acquiring new fabric connection 'model.happy_bookings.dim_city'
+[0m12:19:13.438065 [debug] [Thread-1 (]: Began compiling node model.happy_bookings.dim_city
+[0m12:19:13.476773 [debug] [Thread-1 (]: Writing injected SQL for node "model.happy_bookings.dim_city"
+[0m12:19:13.483753 [debug] [Thread-1 (]: Began executing node model.happy_bookings.dim_city
+[0m12:19:13.537998 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[dim_city__dbt_backup]
+[0m12:19:13.553621 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.dim_city"
+[0m12:19:13.553621 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.dim_city"} */
+
+      
+    USE [bronze_booking];
+    EXEC('DROP table IF EXISTS [dbo].[dim_city__dbt_backup];');
+
+[0m12:19:13.553621 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:19:13.553621 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:19:13.553621 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m12:19:13.569242 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:19:13.586728 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.dim_city"
+[0m12:19:13.586728 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.dim_city"} */
+USE [bronze_booking];
+      EXEC sp_rename 'dbo.dim_city', 'dim_city__dbt_backup'
+[0m12:19:13.986883 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:19:14.004148 [debug] [Thread-1 (]: fabric adapter: Database error: ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {A53D41B7-8290-4D84-BED2-83D46EFC211F} (24528)')
+[0m12:19:14.004148 [debug] [Thread-1 (]: On model.happy_bookings.dim_city: Close
+[0m12:19:14.071013 [debug] [Thread-1 (]: Database Error in model dim_city (models\happy_bookings\dim_city.sql)
+  ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {A53D41B7-8290-4D84-BED2-83D46EFC211F} (24528)')
+[0m12:19:14.087437 [error] [Thread-1 (]: 1 of 3 ERROR creating sql view model dbo.dim_city .............................. [[31mERROR[0m in 0.63s]
+[0m12:19:14.087437 [debug] [Thread-1 (]: Finished running node model.happy_bookings.dim_city
+[0m12:19:14.087437 [debug] [Thread-1 (]: Began running node model.happy_bookings.fact_booking
+[0m12:19:14.087437 [debug] [Thread-4 (]: Marking all children of 'model.happy_bookings.dim_city' to be skipped because of status 'error'.  Reason: Database Error in model dim_city (models\happy_bookings\dim_city.sql)
+  ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {A53D41B7-8290-4D84-BED2-83D46EFC211F} (24528)').
+[0m12:19:14.087437 [info ] [Thread-1 (]: 2 of 3 START sql view model dbo.fact_booking ................................... [RUN]
+[0m12:19:14.087437 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.happy_bookings.dim_city, now model.happy_bookings.fact_booking)
+[0m12:19:14.098192 [debug] [Thread-1 (]: Began compiling node model.happy_bookings.fact_booking
+[0m12:19:14.111832 [debug] [Thread-1 (]: Writing injected SQL for node "model.happy_bookings.fact_booking"
+[0m12:19:14.116141 [debug] [Thread-1 (]: Began executing node model.happy_bookings.fact_booking
+[0m12:19:14.142393 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[fact_booking__dbt_backup]
+[0m12:19:14.145385 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.fact_booking"
+[0m12:19:14.146385 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.fact_booking"} */
+
+      
+    USE [bronze_booking];
+    EXEC('DROP table IF EXISTS [dbo].[fact_booking__dbt_backup];');
+
+[0m12:19:14.147380 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:19:14.147380 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:19:14.148377 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m12:19:14.162344 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:19:14.173309 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.fact_booking"
+[0m12:19:14.174311 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.fact_booking"} */
+USE [bronze_booking];
+      EXEC sp_rename 'dbo.fact_booking', 'fact_booking__dbt_backup'
+[0m12:19:14.281139 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:19:14.281139 [debug] [Thread-1 (]: fabric adapter: Database error: ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {D2130BF5-6B4D-470C-8FBB-23012884E90D} (24528)')
+[0m12:19:14.281139 [debug] [Thread-1 (]: On model.happy_bookings.fact_booking: Close
+[0m12:19:14.296760 [debug] [Thread-1 (]: Database Error in model fact_booking (models\happy_bookings\fact_booking.sql)
+  ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {D2130BF5-6B4D-470C-8FBB-23012884E90D} (24528)')
+[0m12:19:14.296760 [error] [Thread-1 (]: 2 of 3 ERROR creating sql view model dbo.fact_booking .......................... [[31mERROR[0m in 0.21s]
+[0m12:19:14.296760 [debug] [Thread-1 (]: Finished running node model.happy_bookings.fact_booking
+[0m12:19:14.296760 [debug] [Thread-1 (]: Began running node model.happy_bookings.kpi_revenue
+[0m12:19:14.296760 [debug] [Thread-4 (]: Marking all children of 'model.happy_bookings.fact_booking' to be skipped because of status 'error'.  Reason: Database Error in model fact_booking (models\happy_bookings\fact_booking.sql)
+  ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {D2130BF5-6B4D-470C-8FBB-23012884E90D} (24528)').
+[0m12:19:14.296760 [info ] [Thread-1 (]: 3 of 3 START sql view model dbo.kpi_revenue .................................... [RUN]
+[0m12:19:14.296760 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.happy_bookings.fact_booking, now model.happy_bookings.kpi_revenue)
+[0m12:19:14.309877 [debug] [Thread-1 (]: Began compiling node model.happy_bookings.kpi_revenue
+[0m12:19:14.317367 [debug] [Thread-1 (]: Writing injected SQL for node "model.happy_bookings.kpi_revenue"
+[0m12:19:14.319213 [debug] [Thread-1 (]: Began executing node model.happy_bookings.kpi_revenue
+[0m12:19:14.319213 [debug] [Thread-1 (]: Applying DROP to: [bronze_booking].[dbo].[kpi_revenue__dbt_backup]
+[0m12:19:14.336580 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.kpi_revenue"
+[0m12:19:14.342468 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.kpi_revenue"} */
+
+      
+    USE [bronze_booking];
+    EXEC('DROP table IF EXISTS [dbo].[kpi_revenue__dbt_backup];');
+
+[0m12:19:14.344526 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:19:14.345546 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:19:14.347577 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m12:19:14.360918 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:19:14.365897 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.kpi_revenue"
+[0m12:19:14.366894 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.kpi_revenue"} */
+USE [bronze_booking];
+      EXEC sp_rename 'dbo.kpi_revenue', 'kpi_revenue__dbt_backup'
+[0m12:19:14.465847 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:19:14.481470 [debug] [Thread-1 (]: fabric adapter: Database error: ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {754AEACE-F214-4CA8-8B4A-0EBE2E773990} (24528)')
+[0m12:19:14.481470 [debug] [Thread-1 (]: On model.happy_bookings.kpi_revenue: Close
+[0m12:19:14.481470 [debug] [Thread-1 (]: Database Error in model kpi_revenue (models\happy_bookings\kpi_revenue.sql)
+  ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {754AEACE-F214-4CA8-8B4A-0EBE2E773990} (24528)')
+[0m12:19:14.481470 [error] [Thread-1 (]: 3 of 3 ERROR creating sql view model dbo.kpi_revenue ........................... [[31mERROR[0m in 0.18s]
+[0m12:19:14.481470 [debug] [Thread-1 (]: Finished running node model.happy_bookings.kpi_revenue
+[0m12:19:14.481470 [debug] [Thread-4 (]: Marking all children of 'model.happy_bookings.kpi_revenue' to be skipped because of status 'error'.  Reason: Database Error in model kpi_revenue (models\happy_bookings\kpi_revenue.sql)
+  ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {754AEACE-F214-4CA8-8B4A-0EBE2E773990} (24528)').
+[0m12:19:14.497096 [debug] [MainThread]: On master: COMMIT
+[0m12:19:14.497096 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:19:14.497096 [debug] [MainThread]: Connection 'list_bronze_booking' was properly closed.
+[0m12:19:14.497096 [debug] [MainThread]: Connection 'list_bronze_booking_dbo' was properly closed.
+[0m12:19:14.497096 [debug] [MainThread]: Connection 'model.happy_bookings.kpi_revenue' was properly closed.
+[0m12:19:14.497096 [info ] [MainThread]: 
+[0m12:19:14.497096 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 45.44 seconds (45.44s).
+[0m12:19:14.507192 [debug] [MainThread]: Command end result
+[0m12:19:14.603060 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m12:19:14.603060 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m12:19:14.625183 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\run_results.json
+[0m12:19:14.626181 [info ] [MainThread]: 
+[0m12:19:14.627181 [info ] [MainThread]: [31mCompleted with 3 errors, 0 partial successes, and 0 warnings:[0m
+[0m12:19:14.628177 [info ] [MainThread]: 
+[0m12:19:14.629179 [error] [MainThread]: [31mFailure in model dim_city (models\happy_bookings\dim_city.sql)[0m
+[0m12:19:14.630171 [error] [MainThread]:   Database Error in model dim_city (models\happy_bookings\dim_city.sql)
+  ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {A53D41B7-8290-4D84-BED2-83D46EFC211F} (24528)')
+[0m12:19:14.631168 [info ] [MainThread]: 
+[0m12:19:14.633165 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\happy_bookings\dim_city.sql
+[0m12:19:14.636154 [info ] [MainThread]: 
+[0m12:19:14.637455 [error] [MainThread]: [31mFailure in model fact_booking (models\happy_bookings\fact_booking.sql)[0m
+[0m12:19:14.637455 [error] [MainThread]:   Database Error in model fact_booking (models\happy_bookings\fact_booking.sql)
+  ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {D2130BF5-6B4D-470C-8FBB-23012884E90D} (24528)')
+[0m12:19:14.637455 [info ] [MainThread]: 
+[0m12:19:14.649172 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\happy_bookings\fact_booking.sql
+[0m12:19:14.651663 [info ] [MainThread]: 
+[0m12:19:14.652744 [error] [MainThread]: [31mFailure in model kpi_revenue (models\happy_bookings\kpi_revenue.sql)[0m
+[0m12:19:14.663836 [error] [MainThread]:   Database Error in model kpi_revenue (models\happy_bookings\kpi_revenue.sql)
+  ('42000', '[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Lakehouse tables cannot be renamed from the SQL Endpoint. Please use the Lakehouse to rename tables. (24718) (SQLMoreResults); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Statement ID: {754AEACE-F214-4CA8-8B4A-0EBE2E773990} (24528)')
+[0m12:19:14.664833 [info ] [MainThread]: 
+[0m12:19:14.667826 [info ] [MainThread]:   compiled code at target\compiled\happy_bookings\models\happy_bookings\kpi_revenue.sql
+[0m12:19:14.670109 [info ] [MainThread]: 
+[0m12:19:14.678112 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=3 SKIP=0 NO-OP=0 TOTAL=3
+[0m12:19:14.680116 [debug] [MainThread]: Command `dbt run` failed at 12:19:14.680116 after 53.01 seconds
+[0m12:19:14.681106 [debug] [MainThread]: Flushing usage events
+[0m12:19:14.703888 [info ] [MainThread]: fabric adapter: Skipping warehouse snapshot update: error
+[0m12:22:10.758226 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 12:22:10.895126 | c98ea0ff-d26b-4a13-b728-bfd17338159f ==============================
+[0m12:22:10.895126 [info ] [MainThread]: Running with dbt=1.11.11
+[0m12:22:10.898114 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\user1\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\user1\\OneDrive\\Masaüstü\\Happy_bookings\\logs'}
+[0m12:22:15.365881 [info ] [MainThread]: Registered adapter: fabric=1.10.0
+[0m12:22:16.264260 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m12:22:17.753239 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 3 files added, 0 files changed.
+[0m12:22:17.754469 [debug] [MainThread]: Partial parsing: added file: happy_bookings://models\happy_bookings\stg_dim_city.sql
+[0m12:22:17.755482 [debug] [MainThread]: Partial parsing: added file: happy_bookings://models\happy_bookings\stg_kpi_revenue.sql
+[0m12:22:17.756467 [debug] [MainThread]: Partial parsing: added file: happy_bookings://models\happy_bookings\stg_fact_booking.sql
+[0m12:22:17.756467 [debug] [MainThread]: Partial parsing: deleted file: happy_bookings://models\happy_bookings\dim_city.sql
+[0m12:22:17.757465 [debug] [MainThread]: Partial parsing: deleted file: happy_bookings://models\happy_bookings\fact_booking.sql
+[0m12:22:17.758463 [debug] [MainThread]: Partial parsing: deleted file: happy_bookings://models\happy_bookings\kpi_revenue.sql
+[0m12:22:18.502342 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m12:22:18.564323 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m12:22:18.605037 [info ] [MainThread]: Found 7 data tests, 3 models, 3 sources, 525 macros
+[0m12:22:18.610024 [info ] [MainThread]: 
+[0m12:22:18.611684 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m12:22:18.613679 [info ] [MainThread]: 
+[0m12:22:18.615675 [debug] [MainThread]: Acquiring new fabric connection 'master'
+[0m12:22:18.646333 [debug] [ThreadPool]: Acquiring new fabric connection 'list_bronze_booking'
+[0m12:22:18.693505 [debug] [ThreadPool]: dbt-fabric
+[0m12:22:18.694515 [debug] [ThreadPool]: Using fabric connection "list_bronze_booking"
+[0m12:22:18.694515 [debug] [ThreadPool]: On list_bronze_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "connection_name": "list_bronze_booking"} */
+USE [bronze_booking];
+    select  name as [schema]
+    from sys.schemas  
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+  
+[0m12:22:18.695527 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:22:18.695527 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:23:02.666666 [debug] [ThreadPool]: fabric adapter: Connected to db: bronze_booking
+[0m12:23:02.667683 [warn ] [ThreadPool]: fabric adapter: No workspace_id provided; skipping snapshot management.
+[0m12:23:02.679872 [debug] [ThreadPool]: SQL status: OK in 44.000 seconds
+[0m12:23:02.683942 [debug] [ThreadPool]: On list_bronze_booking: Close
+[0m12:23:02.686931 [debug] [ThreadPool]: Acquiring new fabric connection 'list_bronze_booking_dbo'
+[0m12:23:02.712864 [debug] [ThreadPool]: dbt-fabric
+[0m12:23:02.713872 [debug] [ThreadPool]: Using fabric connection "list_bronze_booking_dbo"
+[0m12:23:02.718865 [debug] [ThreadPool]: On list_bronze_booking_dbo: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "connection_name": "list_bronze_booking_dbo"} */
+USE [bronze_booking];
+    with base as (
+      select
+        DB_NAME() as [database],
+        t.name as [name],
+        SCHEMA_NAME(t.schema_id) as [schema],
+        'table' as table_type
+      from sys.tables as t 
+      where SCHEMA_NAME(t.schema_id) like 'dbo'
+      union all
+      select
+        DB_NAME() as [database],
+        v.name as [name],
+        SCHEMA_NAME(v.schema_id) as [schema],
+        'view' as table_type
+      from sys.views as v 
+      where SCHEMA_NAME(v.schema_id) like 'dbo'
+    )
+    select * from base
+    
+    OPTION (LABEL = 'dbt-fabric-dw');
+
+  
+[0m12:23:02.725828 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:23:02.727824 [debug] [ThreadPool]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:23:02.728819 [debug] [ThreadPool]: fabric adapter: Connected to db: bronze_booking
+[0m12:23:02.753145 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m12:23:02.757157 [debug] [ThreadPool]: On list_bronze_booking_dbo: Close
+[0m12:23:02.761322 [debug] [MainThread]: On master: COMMIT
+[0m12:23:02.773972 [debug] [Thread-1 (]: Began running node model.happy_bookings.stg_dim_city
+[0m12:23:02.774969 [info ] [Thread-1 (]: 1 of 3 START sql view model dbo.stg_dim_city ................................... [RUN]
+[0m12:23:02.776049 [debug] [Thread-1 (]: Acquiring new fabric connection 'model.happy_bookings.stg_dim_city'
+[0m12:23:02.777047 [debug] [Thread-1 (]: Began compiling node model.happy_bookings.stg_dim_city
+[0m12:23:02.797350 [debug] [Thread-1 (]: Writing injected SQL for node "model.happy_bookings.stg_dim_city"
+[0m12:23:02.802338 [debug] [Thread-1 (]: Began executing node model.happy_bookings.stg_dim_city
+[0m12:23:02.886289 [debug] [Thread-1 (]: Writing runtime sql for node "model.happy_bookings.stg_dim_city"
+[0m12:23:02.889297 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.stg_dim_city"
+[0m12:23:02.890278 [debug] [Thread-1 (]: On model.happy_bookings.stg_dim_city: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.stg_dim_city"} */
+USE [bronze_booking];
+    
+    
+
+    EXEC('create view [dbo].[stg_dim_city] as 
+
+SELECT * FROM [bronze_booking].[dbo].[dim_city];');
+
+
+
+[0m12:23:02.891292 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m12:23:02.892273 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:23:02.894267 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m12:23:02.915549 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:23:02.957813 [debug] [Thread-1 (]: On model.happy_bookings.stg_dim_city: COMMIT
+[0m12:23:02.960805 [debug] [Thread-1 (]: On model.happy_bookings.stg_dim_city: Close
+[0m12:23:02.968197 [info ] [Thread-1 (]: 1 of 3 OK created sql view model dbo.stg_dim_city .............................. [[32mOK[0m in 0.19s]
+[0m12:23:02.969195 [debug] [Thread-1 (]: Finished running node model.happy_bookings.stg_dim_city
+[0m12:23:02.970190 [debug] [Thread-1 (]: Began running node model.happy_bookings.stg_fact_booking
+[0m12:23:02.971188 [info ] [Thread-1 (]: 2 of 3 START sql view model dbo.stg_fact_booking ............................... [RUN]
+[0m12:23:02.973183 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.happy_bookings.stg_dim_city, now model.happy_bookings.stg_fact_booking)
+[0m12:23:02.973183 [debug] [Thread-1 (]: Began compiling node model.happy_bookings.stg_fact_booking
+[0m12:23:02.980164 [debug] [Thread-1 (]: Writing injected SQL for node "model.happy_bookings.stg_fact_booking"
+[0m12:23:02.984155 [debug] [Thread-1 (]: Began executing node model.happy_bookings.stg_fact_booking
+[0m12:23:02.993129 [debug] [Thread-1 (]: Writing runtime sql for node "model.happy_bookings.stg_fact_booking"
+[0m12:23:02.996140 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.stg_fact_booking"
+[0m12:23:02.997119 [debug] [Thread-1 (]: On model.happy_bookings.stg_fact_booking: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.stg_fact_booking"} */
+USE [bronze_booking];
+    
+    
+
+    EXEC('create view [dbo].[stg_fact_booking] as 
+
+SELECT * FROM [bronze_booking].[dbo].[fact_booking];');
+
+
+
+[0m12:23:03.000665 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:23:03.005660 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:23:03.008641 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m12:23:03.028752 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:23:03.036733 [debug] [Thread-1 (]: On model.happy_bookings.stg_fact_booking: COMMIT
+[0m12:23:03.038728 [debug] [Thread-1 (]: On model.happy_bookings.stg_fact_booking: Close
+[0m12:23:03.039726 [info ] [Thread-1 (]: 2 of 3 OK created sql view model dbo.stg_fact_booking .......................... [[32mOK[0m in 0.07s]
+[0m12:23:03.041720 [debug] [Thread-1 (]: Finished running node model.happy_bookings.stg_fact_booking
+[0m12:23:03.042717 [debug] [Thread-1 (]: Began running node model.happy_bookings.stg_kpi_revenue
+[0m12:23:03.043715 [info ] [Thread-1 (]: 3 of 3 START sql view model dbo.stg_kpi_revenue ................................ [RUN]
+[0m12:23:03.044712 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.happy_bookings.stg_fact_booking, now model.happy_bookings.stg_kpi_revenue)
+[0m12:23:03.045710 [debug] [Thread-1 (]: Began compiling node model.happy_bookings.stg_kpi_revenue
+[0m12:23:03.052698 [debug] [Thread-1 (]: Writing injected SQL for node "model.happy_bookings.stg_kpi_revenue"
+[0m12:23:03.056679 [debug] [Thread-1 (]: Began executing node model.happy_bookings.stg_kpi_revenue
+[0m12:23:03.068648 [debug] [Thread-1 (]: Writing runtime sql for node "model.happy_bookings.stg_kpi_revenue"
+[0m12:23:03.076630 [debug] [Thread-1 (]: Using fabric connection "model.happy_bookings.stg_kpi_revenue"
+[0m12:23:03.077623 [debug] [Thread-1 (]: On model.happy_bookings.stg_kpi_revenue: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "happy_bookings", "target_name": "dev", "node_id": "model.happy_bookings.stg_kpi_revenue"} */
+USE [bronze_booking];
+    
+    
+
+    EXEC('create view [dbo].[stg_kpi_revenue] as 
+
+SELECT * FROM [bronze_booking].[dbo].[kpi_revenue];');
+
+
+
+[0m12:23:03.079620 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:23:03.085602 [debug] [Thread-1 (]: fabric adapter: Using connection string: DRIVER={ODBC Driver 18 for SQL Server};SERVER=pqawgip6plse5gy4hmnspyhbky-6ltjsckg3truxpod5r4p7iklv4.datawarehouse.fabric.microsoft.com;Database=bronze_booking;Pooling=true;SQL_ATTR_TRACE=SQL_OPT_TRACE_OFF;Authentication=ActiveDirectoryInteractive;UID={None};encrypt=Yes;TrustServerCertificate=No;APP=dbt-fabric/1.10.0;ConnectRetryCount=3;ConnectRetryInterval=10
+[0m12:23:03.087309 [debug] [Thread-1 (]: fabric adapter: Connected to db: bronze_booking
+[0m12:23:03.110239 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m12:23:03.114231 [debug] [Thread-1 (]: On model.happy_bookings.stg_kpi_revenue: COMMIT
+[0m12:23:03.117223 [debug] [Thread-1 (]: On model.happy_bookings.stg_kpi_revenue: Close
+[0m12:23:03.119217 [info ] [Thread-1 (]: 3 of 3 OK created sql view model dbo.stg_kpi_revenue ........................... [[32mOK[0m in 0.07s]
+[0m12:23:03.122216 [debug] [Thread-1 (]: Finished running node model.happy_bookings.stg_kpi_revenue
+[0m12:23:03.123204 [debug] [MainThread]: On master: COMMIT
+[0m12:23:03.124204 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:23:03.125202 [debug] [MainThread]: Connection 'list_bronze_booking' was properly closed.
+[0m12:23:03.125202 [debug] [MainThread]: Connection 'list_bronze_booking_dbo' was properly closed.
+[0m12:23:03.126199 [debug] [MainThread]: Connection 'model.happy_bookings.stg_kpi_revenue' was properly closed.
+[0m12:23:03.128195 [info ] [MainThread]: 
+[0m12:23:03.131185 [info ] [MainThread]: Finished running 3 view models in 0 hours 0 minutes and 44.51 seconds (44.51s).
+[0m12:23:03.137168 [debug] [MainThread]: Command end result
+[0m12:23:03.233585 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\manifest.json
+[0m12:23:03.239571 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\semantic_manifest.json
+[0m12:23:03.253676 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\user1\OneDrive\Masaüstü\Happy_bookings\target\run_results.json
+[0m12:23:03.254674 [info ] [MainThread]: 
+[0m12:23:03.256670 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:23:03.257666 [info ] [MainThread]: 
+[0m12:23:03.258665 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+[0m12:23:03.260660 [debug] [MainThread]: Command `dbt run` succeeded at 12:23:03.260660 after 52.68 seconds
+[0m12:23:03.261657 [debug] [MainThread]: Flushing usage events

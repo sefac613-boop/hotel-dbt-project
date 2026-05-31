@@ -15,4 +15,4 @@ clean-targets:
 
 models:
   happy_bookings:
-    materialized: table
+    materialized: view
